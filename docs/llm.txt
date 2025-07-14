@@ -32,7 +32,7 @@ Look through the textbook and the exercise book before you start.
 
 For starting press "Select" button.
 
-![userman1](./images/userman1.png)
+![doc-userman1](./images/userman1.png)
 
 #### Tips
 
@@ -40,7 +40,7 @@ Right-click on the "Exercizes" menu and choose "Open Link in New Tab". Do the
 same for "Textbook". Then you can have both software and the books available on
 the three open pages in you browser.
 
-![userman1a](./images/userman1a.png)
+![doc-userman1a](./images/userman1a.png)
 
 ### Page "Select topology for your system"
 
@@ -55,32 +55,32 @@ of the components and the software chooses suitable component candidates from
 catalogues and presents them to the user (the catalogues are not possible to see
 in this version of DriveConstructor).
 
-![userman2](./images/userman2.png)
+![doc-userman2](./images/userman2.png)
 
 Sometimes the software proposes two candidates for some component. Then it is
 necessary to choose one of them by checking the checkbox in the first column.
 
-![userman3](./images/userman3.png)
+![doc-userman3](./images/userman3.png)
 
 ### Page "Drive train with voltage step down"
 
 Transformer is a very important component taking the grid voltage down to the
 level desired for the frequency converter and the machine.
 
-![userman4](./images/userman4.png)
+![doc-userman4](./images/userman4.png)
 
 By default the voltage on LV side of transformer is 650-700 V. You can choose
 this to some other level as shown below. Transformer ratio recalculates
 automatically. You can adjust the ratio by setting different "tappings".
 
-![userman5](./images/userman5.png)
+![doc-userman5](./images/userman5.png)
 
 When choosing types of frequency converter and winding type of transformer, make
 sure lines on the icons match each other. Avoid situations where e.g.
 transformer with 3-winding is connected to frequency converter destined for
 2-winding transformer...
 
-![userman6](./images/userman6.png)
+![doc-userman6](./images/userman6.png)
 
 The first two topologies above are wrong and only the third one is correct!
 
@@ -88,7 +88,7 @@ Note that all parameters in "System" table of the report are for system as the
 whole, meaning for example the price is sum of prices of all components, the
 efficiency is product of efficiencies of all components, etc.
 
-![userman15](./images/userman15.png)
+![doc-userman15](./images/userman15.png)
 
 ### Benchmarking of systems
 
@@ -98,19 +98,19 @@ variants. Follow the following steps:
 
 ##### STEP 1. Press "Save system"
 
-![userman7](./images/userman7.png)
+![doc-userman7](./images/userman7.png)
 
 ##### STEP 2. Choose some name for the system and press "Save system"
 
 Then your system gets saved in "My systems" under the given name.
 
-![userman8](./images/userman8.png)
+![doc-userman8](./images/userman8.png)
 
 ##### STEP 3. Open "My systems"
 
 Here you can see key parameters of the saved system:
 
-![userman9](./images/userman9.png)
+![doc-userman9](./images/userman9.png)
 
 To benchmark systems one needs at least two of them. To set parameters of the
 second system the user should go through the main page of DriveConstructor as
@@ -118,7 +118,7 @@ described in the next steps.
 
 ##### STEP 4. Press on "DriveConstructor" in the upper left corner
 
-![userman10](./images/userman10.png)
+![doc-userman10](./images/userman10.png)
 
 You come to the main page.
 
@@ -126,7 +126,7 @@ You come to the main page.
 
 ##### STEP 6. Choose the system topology for the second system
 
-![userman11](./images/userman11.png)
+![doc-userman11](./images/userman11.png)
 
 ##### STEP 7. Configure the system by setting all the parameters and save it in "My systems" the same way as you did for the first system
 
@@ -134,16 +134,16 @@ You come to the main page.
 
 ##### STEP 9. To benchmark the two systems, check both boxes under "Select" and press "Compare"
 
-![userman12](./images/userman12.png)
+![doc-userman12](./images/userman12.png)
 
 Then the graph appear as below:
 
-![userman13](./images/userman13.png)
+![doc-userman13](./images/userman13.png)
 
 Use feedback form for any comments, proposals and reporting problems to the
 course developers
 
-![userman14](./images/userman14.png)
+![doc-userman14](./images/userman14.png)
 
 
 # Electric machines
@@ -159,7 +159,7 @@ description: Electric machines exercises
 
 ## EM-1. Voltage level and insulation
 
-![pm-fc-tr](./images/pm_fc_tr.png)
+![doc-pm-fc-tr](./images/pm_fc_tr.png)
 
 Investigate influence of the rated voltage level on size and cost of the
 electric motors by working with the system consisting of a motor and a frequency
@@ -196,11 +196,11 @@ Consider two system architectures; with gearbox and without one (direct drive).
 
 #### System 1:
 
-![cn-em-fc](./images/cn_em_fc.png)
+![doc-cn-em-fc](./images/cn_em_fc.png)
 
 #### System 2:
 
-![cn-gb-em-fc](./images/cn_gb_em_fc.png)
+![doc-cn-gb-em-fc](./images/cn_gb_em_fc.png)
 
 For the systems 1 and 2 above investigate influence of the gear ratio on size,
 cost and inertia of electric motor.
@@ -224,7 +224,7 @@ explain the results/conclusions as the electric machine designer?
 
 ## EM-3. Efficiency class, lifecycle analysis
 
-![pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
+![doc-pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
 
 You are a chief engineer at a plant. Consider replacement of old induction motor
 (cooling IC411, protection IP21) on a centrifugal pump with either IE3 motor or
@@ -243,7 +243,7 @@ Find LCC (cost of ownership) for all the alternatives
 * Operational time - 8000 hours/year
 * Service life - 5 years (another variant 10 years)
 
-![em3-1](./images/EM3_1.png)
+![doc-em3-1](./images/EM3_1.png)
 
 So, there are all together eight variants to consider:
 
@@ -267,7 +267,7 @@ What general conclusion can you draw on dominating cost components?
 
 ## EM-4. Comparison of machine technologies
 
-![pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
+![doc-pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
 
 Design drive train for a pump (*head* 50 m, *flow* 50 l/s, *efficiency* 82%,
 *speed* 1450 rpm).
@@ -280,7 +280,7 @@ Try *SCIM (IE2)*, *SyRM*, *PMSM* as the motor type. Calculate Life Cycle Cost
 (LCC) for each motor variant. Compare the variants on spider diagram. Consider
 strong and weak sides of the technologies.
 
-![em3-1](./images/EM3_1.png)
+![doc-em3-1](./images/EM3_1.png)
 
 * Energy price - 0,2 Euro/kWh
 * Operational time - 8000 hours/year
@@ -368,7 +368,7 @@ Application - food & beverages (wet, acids, etc.)
 
 Take CONVEYOR with drive system with just frequency converter.
 
-![cn-em-fc](./images/cn_em_fc.png)
+![doc-cn-em-fc](./images/cn_em_fc.png)
 
 Available information:
 
@@ -412,7 +412,7 @@ First consider *SCIM* only. Then solve the problem using other motor types.
 
 Note that density of oil is not the same as density of water.
 
-![pump-with-motor](./images/pump-with-motor.png)
+![doc-pump-with-motor](./images/pump-with-motor.png)
 
 ## EM-10. Thermal capacity & insulation class
 
@@ -460,7 +460,7 @@ turbine.
 
 Drive train with just FC.
 
-![pm-fc-tr](./images/pm_fc_tr.png)
+![doc-pm-fc-tr](./images/pm_fc_tr.png)
 
 Set parameters:
 
@@ -473,7 +473,7 @@ Set parameters:
 
 Drive train with gearbox, FC and transformer.
 
-![wt-gb-fc-tr](./images/wt_gb_fc_tr.png)
+![doc-wt-gb-fc-tr](./images/wt_gb_fc_tr.png)
 
 Set parameters:
 
@@ -508,7 +508,7 @@ FC is 100 m.
 
 Use the system topology with a transformer:
 
-![pm-fc-tr](./images/pm_fc_tr.png)
+![doc-pm-fc-tr](./images/pm_fc_tr.png)
 
 You have constrained budget so design the system for lowest possible cost.
 Present the results in a table.
@@ -554,7 +554,7 @@ was air-cooled. It is decided to arrange water cooling, so air-to-water heat
 exchanger will be available (installed in the tower). Will the new 1,5 MW FC fit
 the available place?
 
-![fc3](./images/FC3.png)
+![doc-fc3](./images/FC3.png)
 
 ## FC-4. Derating for altitude and temperature
 
@@ -581,7 +581,7 @@ Design drive trains for the six different conveyors. Each conveyor is to be
 driven by one motor. System topology is the same for all the conveyors: gearbox
 *1:5* (type: helical). Grid voltage is 400 V.
 
-![cn-gb-em-fc](./images/cn_gb_em_fc.png)
+![doc-cn-gb-em-fc](./images/cn_gb_em_fc.png)
 
 Parameters (the same for all the conveyors):
 
@@ -631,7 +631,7 @@ applications.
 * Distance from the electric room to the conveyor - 30 m
 * Environment: cement dust
 
-![fc6](./images/FC6.png)
+![doc-fc6](./images/FC6.png)
 
 import Link from "next/link";
 
@@ -684,7 +684,7 @@ For the system driving a pump and consisting of a motor and a frequency
 converter investigate how chosen rated speed of the machine affects it's weight,
 size and cost.
 
-![pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
+![doc-pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
 
 Design the system with the following parameters:
 
@@ -747,13 +747,13 @@ Pump parameters:
 * Rated flow 50 l/s, head 200 m, efficiency 81%, speed 1450 rpm
 * Grid voltage - 6000 V
 
-![sys-3-table](./images/SYS_3_table.png)
+![doc-sys-3-table](./images/SYS_3_table.png)
 
 ## SYS-4. System design
 
 Choose optimal drive train for a pump in water supply system.
 
-![sys4](./images/SYS4.png)
+![doc-sys4](./images/SYS4.png)
 
 import Link from "next/link";
 
@@ -784,7 +784,7 @@ Make and present three design variants:
 Present benchmarking results as a spider diagram (one of the possible variants
 shown below). Comment on the diagram.
 
-![spider](./images/Spider.png)
+![doc-spider](./images/Spider.png)
 
 ## SYS-5. Influence of gearbox type
 
@@ -799,8 +799,8 @@ Compare the following three variants of gearbox stages and electric machines:
 (1) *Pl+Pl+Hel+SCIM* vs (2) *Pl+Pl+Hel+PMSM* vs (3) *Pl+Pl+PMSM*, where "Pl"
 means planetary gear stage, "Hel" means helical gear stage.
 
-![sys5-wind-gear](./images/SYS5_wind_gear.png) *Fig.1. Gearbox with 2 planetary
-stages and one helical stage - "Pl+Pl+Hel" (Source: Romax).*
+![doc-sys5-wind-gear](./images/SYS5_wind_gear.png) *Fig.1. Gearbox with 2
+planetary stages and one helical stage - "Pl+Pl+Hel" (Source: Romax).*
 
 ##### Conveyor
 
@@ -810,13 +810,13 @@ Compare the following three variants of gearbox stages and electric machines:
 (1) *Worm+SCIM* vs (2) *Hel+Hel+SCIM* vs (3) *Hel+Bevel+SCIM*, where "Worm"
 means worm gearbox.
 
-![sys5-worm](./images/SYS5_worm.png) *Fig.2. Gearbox with 1 worm stage -
+![doc-sys5-worm](./images/SYS5_worm.png) *Fig.2. Gearbox with 1 worm stage -
 "Worm".*
 
 Reflect on efficiency if operation is at partial load most of the time. Collect
 results in the tables (separate table for each application).
 
-![sys5table](./images/SYS5table.png)
+![doc-sys5table](./images/SYS5table.png)
 
 ## SYS-6. Filters, cable length and losses
 
@@ -832,7 +832,7 @@ cross-sections and different number of runs. Compare the results. Try both
 copper and aluminum as the cable material. Compare the results. Summarize your
 findings in a table.
 
-![sys6table](./images/sys6table.png)
+![doc-sys6table](./images/sys6table.png)
 
 
 # Pumps
@@ -848,7 +848,7 @@ description: Pumps exercises
 
 ## P-1. Design for different pump types
 
-![pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
+![doc-pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
 
 Design drive system for the four pumps of the same power but of different types
 and with different starting conditions
@@ -896,7 +896,7 @@ ABB/Siemens/Danfoss (Europe).
 
 ## P-3. Design for highest energy efficiency
 
-![pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
+![doc-pmp-fc-em3-2](./images/pmp_fc_EM3_2.png)
 
 Design drive system for variable speed operation of the centrifugal pump in
 water supply system so that the system consumes minimum energy.
@@ -975,7 +975,7 @@ Given parameters:
 * Rated flow 250 l/s, head 200 m, pump efficiency 81%, speed 1450 rpm
 * Voltage supplied to the container - 6000 V
 
-![p5-1](./images/P5_1.png) *Variants of placing the equipment.*
+![doc-p5-1](./images/P5_1.png) *Variants of placing the equipment.*
 
 ## P-6.Design for special environmental conditions
 
@@ -993,7 +993,7 @@ Given pump parameters:
 
 * Rated flow 50 l/s, head 200 m, efficiency 81%, speed 1450 rpm
 
-![p6-1](./images/P6_1.png) *Sketch of the landscape.*
+![doc-p6-1](./images/P6_1.png) *Sketch of the landscape.*
 
 
 # Conveyors
@@ -1012,7 +1012,7 @@ description: Conveyors exercises
 Design drive system for the conveyor situated in a narrow passage. L = 120 cm
 (see the sketch).
 
-![c1](./images/C1.png) *Fig.1. Explanation for the task.*
+![doc-c1](./images/C1.png) *Fig.1. Explanation for the task.*
 
 Available information:
 
@@ -1119,7 +1119,7 @@ be located. Also free to choose voltage level.
 
 Note: only one possible variant is shown on the sketch in Fig.1.
 
-![c5](./images/C5.png) *Fig.1. Explanation of the task.*
+![doc-c5](./images/C5.png) *Fig.1. Explanation of the task.*
 
 Available information:
 
@@ -1201,7 +1201,7 @@ euro.
 
 Summarize and present all key results in a table.
 
-![wt2](./images/WT2.png)
+![doc-wt2](./images/WT2.png)
 
 ## WT-3. Inertia of the drive train as protection against tidal turbine runaway
 
@@ -1291,7 +1291,7 @@ Euro in cost? Which system is the lightest? Which is the cheapest? First take
 induction machine (SCIM) and try different efficiency classes, then try SyRM and
 PMSM.
 
-![wt5](./images/WT5.png)
+![doc-wt5](./images/WT5.png)
 
 
 # Winches and winders
@@ -1319,7 +1319,7 @@ Design drive train for the winder with the following data:
 Design the drive system for lowest cost. Consider topologies with gearbox and
 direct drive.
 
-![w1](./images/W1.png)
+![doc-w1](./images/W1.png)
 
 ## W-2.Designing the winch drum and drive train for low cost
 
@@ -1339,7 +1339,7 @@ Design drum by varying:
 
 Optimize for lowest drive train cost. Assume cost of the drum negligible.
 
-![w2](./images/W2.png)
+![doc-w2](./images/W2.png)
 
 ## W-3. Inertia in the winch drive train
 
@@ -1406,7 +1406,7 @@ such as gearboxes. The components, put together into the power conversion
 system, can be called a drive train or a drive system (this is, by the way, why
 this online software is called *DriveConstructor*)
 
-!\[dc-main-picture]\(./images/DC main picture.png)
+![doc-dc-main-picture](./images/DC_main_picture.png)
 
 Providers of the equipment often call the tasks *Applications*.
 
@@ -1436,7 +1436,7 @@ DriveConstructor covers the following applications:
 * [Wind and tidal turbines](/docs/textbook/applications/turbines)
 * [Winches and winders](/docs/textbook/applications/winches)
 
-![four-applications](./images/four-applications.png)
+![doc-four-applications](./images/four-applications.png)
 
 
 # Pumps
@@ -1470,11 +1470,11 @@ exist many different types of pumps. The most common - centrifugal pump - is
 presented in Fig.1. Another example - progressive cavity pump - is presented in
 Fig.2.
 
-![centrifugal-pump](./images/centrifugal-pump.png)
+![doc-centrifugal-pump](./images/centrifugal-pump.png)
 
 *Fig.1. Centrifugal pump.*
 
-![progressing-cavity-pump](./images/progressing-cavity-pump.png)
+![doc-progressing-cavity-pump](./images/progressing-cavity-pump.png)
 
 *Fig.2. Progressing cavity pump with a motor.*
 
@@ -1516,7 +1516,7 @@ undefined
 Pumps can be classified by their method of the fluid displacement. There are
 many classifications, one of them is presented in Fig. 1.
 
-![pumps-classification](./images/pumps-classification.png)
+![doc-pumps-classification](./images/pumps-classification.png)
 
 *Fig.1. Pump classification.*
 
@@ -1527,9 +1527,9 @@ pumps are different:
 * Centrifugal pumps have quadratic load curve (QT) $$T \sim n^2$$ (Fig.2)
 * Positive displacement pumps have constant load (CT) curve $$T \sim const$$ (Fig.3)
 
-![pump-curve-qt](./images/pump-curve-QT.png) *Fig.2. QT curve.*
+![doc-pump-curve-qt](./images/pump-curve-QT.png) *Fig.2. QT curve.*
 
-![pump-curve-ct](./images/pump-curve-CT.png) *Fig.3. CT curve.*
+![doc-pump-curve-ct](./images/pump-curve-CT.png) *Fig.3. CT curve.*
 
 Quadratic loads are often approximately represented by assuming that the torque
 required is proportional to the square of the speed, giving rise to the terms
@@ -1562,7 +1562,7 @@ second of cubic meter per hour). Rated flow is the key characteristic of any
 pump and is always specified by the pump manufacturer. In DriveConstructor this
 parameter is entered in $$m^3/h$$ or $$l/s$$.
 
-![pump-and-resistance-curve](./images/pump-and-resistance-curve.png)
+![doc-pump-and-resistance-curve](./images/pump-and-resistance-curve.png)
 
 *Fig.1. Centrifugal pump and system resistance curves.*
 
@@ -1581,11 +1581,11 @@ Real pumps can have a significant static friction or breakaway torque (as shown
 in Fig. 2, 3), which must be overcome when starting. In some cituations starting
 torque can be higher than the rated torque even for centrifugal pumps.
 
-![pump-curves-ct-bt](./images/pump-curves-CT-BT.png) *Fig.2. Pump with CT load
-curve and starting curve.*
-
-![pump-curves-stiction](./images/pump-curves-stiction.png) *Fig.3. Pump with QT
+![doc-pump-curves-ct-bt](./images/pump-curves-CT-BT.png) *Fig.2. Pump with CT
 load curve and starting curve.*
+
+![doc-pump-curves-stiction](./images/pump-curves-stiction.png) *Fig.3. Pump with
+QT load curve and starting curve.*
 
 In *DriveConstructor* starting torque is defined as the fraction of rated torque
 $$T\_r$$. The following values can be chosen: 0.0, 0.1, 0.2, 0.3, ..., 1.8,
@@ -1609,9 +1609,9 @@ of the axle of the driven drum and the motor shaft are defined by the gearbox
 type. There can be an angle between the axles if bevel gear stage or worm gear
 stage is used.
 
-![motor-gear-drum](./images/motor-gear-drum.png) *Fig.1.*
+![doc-motor-gear-drum](./images/motor-gear-drum.png) *Fig.1.*
 
-![conveyor](./images/conveyor.png) *Fig.2.*
+![doc-conveyor](./images/conveyor.png) *Fig.2.*
 
 See also:
 
@@ -1669,7 +1669,7 @@ assume torque is constant in the given speed range. Short-term overload can be
 specified. Also very short-term overloads for starting the conveyor (breakaway
 torque) can be specified.
 
-![conveyor-curves](./images/conveyor-curves.png) *Fig.1.*
+![doc-conveyor-curves](./images/conveyor-curves.png) *Fig.1.*
 
 So, one needs to specify:
 
@@ -1694,7 +1694,7 @@ assume torque is constant in the given speed range. Short-term overload can be
 specified. Also very short-term overloads for starting the conveyor (breakaway
 torque) can be specified.
 
-![conveyor-curves](./images/conveyor-curves.png) *Fig.1.*
+![doc-conveyor-curves](./images/conveyor-curves.png) *Fig.1.*
 
 So, one needs to specify:
 
@@ -1720,7 +1720,7 @@ Direct drives are usually bulky and heavy. There are, though, special designs
 usually based on integration with the turbine structure, in order to reduce
 weight.
 
-![wind-turbine-1](./images/wind-turbine-1.png)
+![doc-wind-turbine-1](./images/wind-turbine-1.png)
 
 *Fig.1. Wind turbine with a gearbox and a generator.*
 
@@ -1728,9 +1728,9 @@ The nacelle of a wind or a tidal turbine can contain not only the gearbox and
 the generator, but also other equipment (Fig. 2-3), like frequency converter and
 transformer.
 
-![wt-nacelle](./images/wt-nacelle.png) *Fig.2. Equipment in the nacelle.*
+![doc-wt-nacelle](./images/wt-nacelle.png) *Fig.2. Equipment in the nacelle.*
 
-![tidal-turbine-1](./images/tidal-turbine-1.png) *Fig.3. Tidal turbine.*
+![doc-tidal-turbine-1](./images/tidal-turbine-1.png) *Fig.3. Tidal turbine.*
 
 ### Load characteristics
 
@@ -1738,15 +1738,17 @@ There is theoretical maximum power which is possible to extract following the
 maximum torque curve shown in Fig. 3-4. It can be seen that generator speed
 increases in Region II and is kept almost constant in Region III.
 
-![wt-gen-torque](./images/wt-gen-torque.png) *Fig.4. Generator speed vs torque.*
+![doc-wt-gen-torque](./images/wt-gen-torque.png) *Fig.4. Generator speed vs
+torque.*
 
-![wt-gen-power-speed](./images/wt-gen-power-speed.png) *Fig.5. Wind speed vs
+![doc-wt-gen-power-speed](./images/wt-gen-power-speed.png) *Fig.5. Wind speed vs
 turbine speed and power.*
 
 There should be kept some safety torque margin (between $$n\_1$$ and $$n\_2$$ in
 Fig.6) due to possible wind gusts.
 
-![wind-curve-1](./images/wind-curve-1.png) *Fig.6. Turbine load torque curve.*
+![doc-wind-curve-1](./images/wind-curve-1.png) *Fig.6. Turbine load torque
+curve.*
 
 ### Parameters of wind (or tidal) turbine
 
@@ -1769,11 +1771,11 @@ In *DriveConstructor* two types of mechanisms are united under the same
 "application" class; these mechanisms are winches (Fig. 1-2) and winders (Fig.
 3\).
 
-![winch-1](./images/winch-1.png) *Fig.1. Winch example.*
+![doc-winch-1](./images/winch-1.png) *Fig.1. Winch example.*
 
-![marine-winch](./images/marine-winch.png) *Fig.2. Winch example 2.*
+![doc-marine-winch](./images/marine-winch.png) *Fig.2. Winch example 2.*
 
-![winder](./images/winder.png) *Fig.3. Winder example.*
+![doc-winder](./images/winder.png) *Fig.3. Winder example.*
 
 The winches and winders are characterized by the special shape of load curves.
 The specifics is in changing diameter of the surface on which the material is
@@ -1783,9 +1785,9 @@ coiled on. The two extreme states are shown in Fig.4:
 * last layer of rope or whatever coiled/wound on the drum when there is no more
   space on it ($$D\_2$$)
 
-![winch2](./images/winch2.png) *Fig.4. Dimensions.*
+![doc-winch2](./images/winch2.png) *Fig.4. Dimensions.*
 
-![winch-curves](./images/winch-curves.png) *Fig.5. Load curves.*
+![doc-winch-curves](./images/winch-curves.png) *Fig.5. Load curves.*
 
 When the coiling/uncoiling (winding/unwinding) takes place (between the two
 extreme states) the speed and the torque change in the opposite way. When linear
@@ -1820,7 +1822,7 @@ DriveConstructor includes the following components:
 * [Gearboxes](/docs/textbook/components/gearboxes)
 * [Transformers](/docs/textbook/components/transformers)
 
-![four-components](./images/four-components.png)
+![doc-four-components](./images/four-components.png)
 
 
 # Electric machines
@@ -1843,17 +1845,17 @@ into this version of *DriveConstructor*. It is possible to choose between:
 * *SyRM* - Synchronous Reluctance Machine (Fig.2),
 * *PMSM* - Permanent Magnet Synchronous Machine (rotor shown in Fig.3).
 
-![scim](./images/SCIM.png) *Fig.1A. SCIM*.
+![doc-scim](./images/SCIM.png) *Fig.1A. SCIM*.
 
-![scim-simple1](./images/scim_simple1.png) *Fig.1B. icon of SCIM*.
+![doc-scim-simple1](./images/scim_simple1.png) *Fig.1B. icon of SCIM*.
 
-![syrm](./images/SyRM.png) *Fig.2A. SyRM*.
+![doc-syrm](./images/SyRM.png) *Fig.2A. SyRM*.
 
-![syrm-simple1](./images/syrm_simple1.png) *Fig.2B. icon of SyRM*.
+![doc-syrm-simple1](./images/syrm_simple1.png) *Fig.2B. icon of SyRM*.
 
-![pmsm-rotor](./images/PMSM_rotor.png) *Fig.3A. Rotor of PMSM*.
+![doc-pmsm-rotor](./images/PMSM_rotor.png) *Fig.3A. Rotor of PMSM*.
 
-![pm-motor-simple1](./images/pm_motor_simple1.png) *Fig.3B. icon of PMSM*.
+![doc-pm-motor-simple1](./images/pm_motor_simple1.png) *Fig.3B. icon of PMSM*.
 
 SCIM, PMSM and SyRM can be selected for any application and any drive train
 topology. SyRM are available for quite limited range of powers. So far only LV
@@ -1873,7 +1875,7 @@ Power rating of the electric machines available in *DriveConstructor* is
 according to IEC 60072-1 which suggests the following preferred ratings (based
 on a subset of the R40 series) for motors (in kW) and generators (in kVA):
 
-![em-rated-powers](./images/EM_rated_powers.png)
+![doc-em-rated-powers](./images/EM_rated_powers.png)
 [Source: IEC](http://www.openelectrical.org/wiki/index.php?title=Standard_IEC_Ratings)
 
 Note that asterix-marked powers are "secondary series" ratings and are only to
@@ -1914,9 +1916,9 @@ to 10...20 MW (in *DriveConstructor* up to 5 MW), in some cases up to 100 MW!
 
 Slot designs of LV and MV machines look quite different:
 
-![lv-slot](./images/LV_slot.png) *Fig.4. LV slot.*
+![doc-lv-slot](./images/LV_slot.png) *Fig.4. LV slot.*
 
-![hv-slot](./images/HV_slot.png) *Fig.5. HV slot.*
+![doc-hv-slot](./images/HV_slot.png) *Fig.5. HV slot.*
 
 #### Rated synchronous speed
 
@@ -1953,14 +1955,14 @@ to determine the efficiency level for their minimum energy performance standards
 (or IE2 in combination with a variable frequency drive) from 2015 for smaller
 motors and from 2017 covering also larger motors.
 
-![efficiency-class1](./images/Efficiency_class1.png)
+![doc-efficiency-class1](./images/Efficiency_class1.png)
 
 *Fig.6. Cut-away of standard, energy-efficient, and premium efficiency motors.*
 
 Efficiency value for a certain class depends on power as shown on the diagram
 below:
 
-![efficiency-class3](./images/Efficiency_class3.png)
+![doc-efficiency-class3](./images/Efficiency_class3.png)
 
 *Fig.7. Efficiency classes for 4-pole motors.*
 
@@ -1982,18 +1984,19 @@ the three classes presented below:
   shaft)
 * water-cooled *IC71W*
 
-![cooling1](./images/Cooling1.png) *Fig.8. IC411*.
+![doc-cooling1](./images/Cooling1.png) *Fig.8. IC411*.
 
-![cooling2](./images/Cooling2.png) *Fig.9. IC416. Note separate motor for
+![doc-cooling2](./images/Cooling2.png) *Fig.9. IC416. Note separate motor for
 driving the fan*.
 
-![cooling3](./images/Cooling3.png) *Fig.10. IC71W. Note the cooling mantle*.
+![doc-cooling3](./images/Cooling3.png) *Fig.10. IC71W. Note the cooling mantle*.
 
 Fig. 11 shows that *IC416* provides more load capacity at low speeds than
 *IC411*. It is because the independently fed fan motor of *IC416* configuration
 allows maintaining the cooling air flow independently on the rotor speed.
 
-![cooling-411-vs-416](./images/cooling_411_vs_416.png) *Fig.11. IC411 vs IC416*.
+![doc-cooling-411-vs-416](./images/cooling_411_vs_416.png) *Fig.11. IC411 vs
+IC416*.
 
 Water-cooled machines can be 20-40% smaller than air-cooled IP54/55 machines. If
 cooling water is available, some economies in motor size can be obtained by the
@@ -2009,17 +2012,18 @@ difference between mounting variants is reflected in price. Flange-mounted
 machine would have 1-3% higher price and flange\&foot-mounted - by 5%, compared
 to the basic foot-mounted design.
 
-![em-mounting1](./images/EM_mounting1.png) *Fig.12. B3*
+![doc-em-mounting1](./images/EM_mounting1.png) *Fig.12. B3*
 
-![em-mountingb5](./images/EM_mountingB5.png) *Fig.13. B5*
+![doc-em-mountingb5](./images/EM_mountingB5.png) *Fig.13. B5*
 
-![em-mountingb35](./images/EM_mountingB35.png) *Fig.14. B35*
+![doc-em-mountingb35](./images/EM_mountingB35.png) *Fig.14. B35*
 
 #### Shaft height
 
 IEC and NEMA has standardized motor dimensions, including shaft height.
 
-![shaft-height](./images/Shaft_height.png) *Fig.15. Shaft height illustration.*
+![doc-shaft-height](./images/Shaft_height.png) *Fig.15. Shaft height
+illustration.*
 
 Standard shaft heights row in mm: 56, 63, 71, 80, 90, 100, 112, 132, 160, 180,
 200, 225, 250, 280, 315, 355, 400, 450, 500, 560, 630, 710. If the shaft height
@@ -2137,7 +2141,7 @@ A typical frequency converter (FC) nowadays is a so-called voltage-source type -
 over 95% of all FC are voltage-source converters (VSC). This FC type has a
 DC-link with a capacitor bank across (see Fig.1).
 
-![basic-fc-2](./images/basic_fc_2.png) *Fig.1. VSC topology.*
+![doc-basic-fc-2](./images/basic_fc_2.png) *Fig.1. VSC topology.*
 
 The voltage of the supply network with a constant frequency and amplitude is
 first rectified into DC voltage though with some ripples (Fig.2), and then it is
@@ -2145,12 +2149,12 @@ converted into the voltage with the required frequency and amplitude (Fig. 3).
 Note that the voltage waveform is made of pulses of varying duration, wherein
 the "fundamental" voltage is sinusoidal.
 
-![rectification](./images/rectification.png) *Fig.2. Rectified current in the DC
-link.*
+![doc-rectification](./images/rectification.png) *Fig.2. Rectified current in
+the DC link.*
 
-![pwm-voltage](./images/pwm_voltage.png) *(a)*
+![doc-pwm-voltage](./images/pwm_voltage.png) *(a)*
 
-![pwm-current](./images/pwm_current.png) *(b)*
+![doc-pwm-current](./images/pwm_current.png) *(b)*
 
 *Fig.3. Phase voltage (a) and current (b) at the converter output (machine
 side).*
@@ -2211,20 +2215,21 @@ and influence on the grid (THD). 4Q FC is larger, heavier, more expensive and
 has lower efficiency than 2Q FC. 4Q produce lower THD in the grid. 2-level FC
 are usually LV.
 
-![afe-dc2l-dfe-ing](./images/afe_dc2l_dfe_Ing.png) *Fig.4a. 2Q-2L-VSC-6p*.
+![doc-afe-dc2l-dfe-ing](./images/afe_dc2l_dfe_Ing.png) *Fig.4a. 2Q-2L-VSC-6p*.
 
-![afe-dc2l-dfe](./images/afe_dc2l_dfe.png) *Fig.4b. Icon designation*.
+![doc-afe-dc2l-dfe](./images/afe_dc2l_dfe.png) *Fig.4b. Icon designation*.
 
 Note that on Fig.4a motor side of the FC is the right side, while on Fig.4b -
 left side.
 
-![afe-dc2l-dfe12-ing](./images/afe_dc2l_dfe12_Ing.png) *Fig.5a. 2Q-2L-VSC-12p*.
+![doc-afe-dc2l-dfe12-ing](./images/afe_dc2l_dfe12_Ing.png) *Fig.5a.
+2Q-2L-VSC-12p*.
 
-![afe-dc2l-dfe12](./images/afe_dc2l_dfe12.png) *Fig.5b. Icon designation*.
+![doc-afe-dc2l-dfe12](./images/afe_dc2l_dfe12.png) *Fig.5b. Icon designation*.
 
-![afe-dc2l-afe-ing](./images/afe_dc2l_afe_Ing.png) *Fig.6a. 4Q-2L-VSC*.
+![doc-afe-dc2l-afe-ing](./images/afe_dc2l_afe_Ing.png) *Fig.6a. 4Q-2L-VSC*.
 
-![afe-dc2l-afe](./images/afe_dc2l_afe.png) *Fig.6b. Icon designation*.
+![doc-afe-dc2l-afe](./images/afe_dc2l_afe.png) *Fig.6b. Icon designation*.
 
 ### Converters with 3- and multi-level topologies
 
@@ -2232,27 +2237,28 @@ left side.
 
 3-level FC are usually MV. NPC stands for Neutral-Point Clamped.
 
-![afe-dc3l-dfe12-ing](./images/afe_dc3l_dfe12_Ing.png) *Fig.7a. 2Q-3L-NPC-VSC*.
+![doc-afe-dc3l-dfe12-ing](./images/afe_dc3l_dfe12_Ing.png) *Fig.7a.
+2Q-3L-NPC-VSC*.
 
-![afe-dc3l-afe12](./images/afe_dc3l_afe12.png) *Fig.7b. Icon designation*.
+![doc-afe-dc3l-afe12](./images/afe_dc3l_afe12.png) *Fig.7b. Icon designation*.
 
-![afe-dc3l-afe-ing](./images/afe_dc3l_afe_Ing.png) *Fig.8a. 4Q-3L-NPC-VSC*.
+![doc-afe-dc3l-afe-ing](./images/afe_dc3l_afe_Ing.png) *Fig.8a. 4Q-3L-NPC-VSC*.
 
-![afe-dc3l-afe](./images/afe_dc3l_afe.png) *Fig.8b. Icon designation*.
+![doc-afe-dc3l-afe](./images/afe_dc3l_afe.png) *Fig.8b. Icon designation*.
 
 ##### 2Q-ML-SCHB-VSC and 4Q-ML-SCHB-VSC
 
 SCHB stands for Series-Connected H-Bridge.
 
-![schb-2](./images/SCHB_2.png) *Fig.9a. 2Q-ML-SCHB-VSC topology*.
+![doc-schb-2](./images/SCHB_2.png) *Fig.9a. 2Q-ML-SCHB-VSC topology*.
 
-![schb-dfe-cell](./images/SCHB_dfe_cell.png) *Fig.9b. 2Q-ML-SCHB-VSC cell*.
+![doc-schb-dfe-cell](./images/SCHB_dfe_cell.png) *Fig.9b. 2Q-ML-SCHB-VSC cell*.
 
-![sc-hb-simple2](./images/sc_hb_simple2.png) *Fig.9c. Icon designation*.
+![doc-sc-hb-simple2](./images/sc_hb_simple2.png) *Fig.9c. Icon designation*.
 
-![schb-afe-cell](./images/SCHB_afe_cell.png) *Fig.9d. 4Q-ML-SCHB-VSC cell*.
+![doc-schb-afe-cell](./images/SCHB_afe_cell.png) *Fig.9d. 4Q-ML-SCHB-VSC cell*.
 
-![sc-hb-simple3](./images/sc_hb_simple3.png) *Fig.9e. Icon designation*.
+![doc-sc-hb-simple3](./images/sc_hb_simple3.png) *Fig.9e. Icon designation*.
 
 ***
 
@@ -2289,7 +2295,7 @@ or winch, the variation can be significant, and, therefore can be called "high".
 Examples of what can be called "high overloads" and "low overloads" are
 presented in Fig.1.
 
-![fc-lo-ho](./images/fc_lo_ho.png) *Fig.1. "High overloads" and "low
+![doc-fc-lo-ho](./images/fc_lo_ho.png) *Fig.1. "High overloads" and "low
 overloads"*.
 
 Choosing the FC the designer should take this aspect into account. Each FC has
@@ -2312,7 +2318,7 @@ Explanation is presented in Fig.10. Note $$I\_c$$ which is rated continuous
 current, which is not used in practice. Short-term (10 s) high current of up to
 200% of $$I\_H$$ is acceptable for any converter.
 
-![fc-overloads](./images/fc_overloads.png) *Fig.10. Current overloads of
+![doc-fc-overloads](./images/fc_overloads.png) *Fig.10. Current overloads of
 conventional FC*.
 
 ***
@@ -2329,11 +2335,11 @@ compactness and lower weight can be achieved by use of liquid (water) cooling.
 Fig.1 depicts a 250 kW low-voltage FC mounted on the wall in an enclosed area
 such as an electrical room.
 
-![fc-cooling-air-nat](./images/fc_cooling_air_nat.png) *(a)*
+![doc-fc-cooling-air-nat](./images/fc_cooling_air_nat.png) *(a)*
 
-![fc-cooling-air-ac](./images/fc_cooling_air_AC.png) *(b)*
+![doc-fc-cooling-air-ac](./images/fc_cooling_air_AC.png) *(b)*
 
-![fc-cooling-air-wc](./images/fc_cooling_air_WC.png) *(c)*
+![doc-fc-cooling-air-wc](./images/fc_cooling_air_WC.png) *(c)*
 
 *Fig.11. Cooling types.*
 
@@ -2416,15 +2422,15 @@ described in chapter
 eliminated, since the machine is powered by voltage and current with a shape
 very close to sinusoidal.
 
-![sin-filter-topology](./images/sin_filter_topology.png) *(a)*
+![doc-sin-filter-topology](./images/sin_filter_topology.png) *(a)*
 
-![sin-filter](./images/sin_filter.png) *(b)*
+![doc-sin-filter](./images/sin_filter.png) *(b)*
 
 *Fig. 12. "Classical" sin-filter topology (a) and product example (b)*.
 
-![pwm-measured](./images/pwm_measured.png) *(a)*
+![doc-pwm-measured](./images/pwm_measured.png) *(a)*
 
-![after-sin](./images/after_sin.png) *(b)*
+![doc-after-sin](./images/after_sin.png) *(b)*
 
 *Fig. 13. The voltage waveforms at the input (a) and at the output (b) of the
 sin-filter. Note different time span on the oscillograms*.
@@ -2450,9 +2456,9 @@ resistance. The inclusion of inductance in the equivalent electrical circuit of
 the cable increases the wave resistance of the cable line and brings down the
 reflection coefficient. Thus, the voltage peaks at terminals decreases.
 
-![dut-filter-topology](./images/dut_filter_topology.png) *(a)*
+![doc-dut-filter-topology](./images/dut_filter_topology.png) *(a)*
 
-![dut-filter](./images/dut_filter.png) *(b)*
+![doc-dut-filter](./images/dut_filter.png) *(b)*
 
 *Fig. 14. "Classical" du/dt-filter topology (a) and product example (b)*.
 
@@ -2462,9 +2468,9 @@ properties of the inductance, the filter also reduces the voltage surge at the
 leading edge of the pulse (Fig.15). The length of the cable is 30 m. Note
 different rise time: dt=220 ns, dt=820 ns.
 
-![before-dut](./images/before_dut.png) *(a)*
+![doc-before-dut](./images/before_dut.png) *(a)*
 
-![after-dut](./images/after_dut.png) *(b)*
+![doc-after-dut](./images/after_dut.png) *(b)*
 
 *Fig. 15. Voltage pulses at the machine terminals without du/dt-filter (a) and
 with a filter (b)*.
@@ -2492,18 +2498,18 @@ Influence of presence of the choke and its size on the harmonics injected into
 the grid is presented in Fig.16 and 17. The graphs show current waveform and the
 value of current distortion THD(i) as % of nominal current at full load.
 
-![6p-no-choke](./images/6p_no_choke.png) *(a)*
+![doc-6p-no-choke](./images/6p_no_choke.png) *(a)*
 
-![thdi80](./images/THDi80.png) *(b)*
+![doc-thdi80](./images/THDi80.png) *(b)*
 
 *Fig. 16. 6-pulse rectifier without any choke (a) and current waveform for this
 topology (b)*.
 
-![6p-with-choke](./images/6p_with_choke.png) *(a)*
+![doc-6p-with-choke](./images/6p_with_choke.png) *(a)*
 
-![thdi40](./images/THDi40.png) *(b)*
+![doc-thdi40](./images/THDi40.png) *(b)*
 
-![thdi28](./images/THDi28.png) *(c)*
+![doc-thdi28](./images/THDi28.png) *(c)*
 
 *Fig. 17. 6-pulse rectifier with a choke (a) and current waveforms for small
 choke (b) and big choke (c)*.
@@ -2513,9 +2519,9 @@ choke (b) and big choke (c)*.
 FC with LCL filter between FC and the grid is presented in Fig.7,a. Current
 waveform is very close to sinusoidal as can be seen in Fig. 7,b.
 
-![fc-with-lcl](./images/fc_with_LCL.png) *(a)*
+![doc-fc-with-lcl](./images/fc_with_LCL.png) *(a)*
 
-![thdi5](./images/THDi5.png) *(b)*
+![doc-thdi5](./images/THDi5.png) *(b)*
 
 *Fig. 18. Topology (a) and current waveform (b)*.
 
@@ -2524,13 +2530,13 @@ waveform is very close to sinusoidal as can be seen in Fig. 7,b.
 EMC filters (Fig.19) is destined for emission reduction in MHz range. Example of
 the effect is presented in Fig.20.
 
-![emc-filter-topology](./images/emc_filter_topology.png) *(a)*
+![doc-emc-filter-topology](./images/emc_filter_topology.png) *(a)*
 
-![emc-filter-ac](./images/emc_filter_ac.png) *(b)*
+![doc-emc-filter-ac](./images/emc_filter_ac.png) *(b)*
 
 *Fig. 19. EMC filters: topology (a), AC side filter product example (b)*.
 
-![emc-with-without-filter](./images/EMC_with_without_filter.png)
+![doc-emc-with-without-filter](./images/EMC_with_without_filter.png)
 
 *Fig. 20. Effect of use of EMC-filter*.
 
@@ -2552,7 +2558,7 @@ the latter consists of more than one stage. Overall gear ratio is a product of
 ratios of all stages. Also overall efficiency is a product of efficiencies of
 all stages.
 
-![industrial-gearbox-free-image](./images/industrial-gearbox-free-image.png)
+![doc-industrial-gearbox-free-image](./images/industrial-gearbox-free-image.png)
 *FIg.1. Gearbox example*.
 
 In *DriveConstructor* gearbox can have maximum three stages. However, in the
@@ -2591,9 +2597,10 @@ and 98%. In *DriveConstructor* we assume rated efficiency of 98%. This type of
 gear is cheap to manufacture and has good torque and noise properties, though it
 is generally expensive and requires many gear stages for large reductions.
 
-![gear-helical-stage3](./images/gear_helical_stage3.png) *Fig.2. Helical stage*.
+![doc-gear-helical-stage3](./images/gear_helical_stage3.png) *Fig.2. Helical
+stage*.
 
-![gear-worm3](./images/gear_worm3.png) *Fig.3. Worm gear*.
+![doc-gear-worm3](./images/gear_worm3.png) *Fig.3. Worm gear*.
 
 ##### Worm gear
 
@@ -2607,8 +2614,8 @@ typically low efficiency suggests their use for low or middle-to-low power
 demand applications and/or those featuring intermittent duty. They can be ideal
 for applications that need to resist reversing.
 
-![worm-helical-eff](./images/worm_helical_eff.png) *Fig.4. Efficiency of worm
-gear for different ratios*.
+![doc-worm-helical-eff](./images/worm_helical_eff.png) *Fig.4. Efficiency of
+worm gear for different ratios*.
 
 ##### Planetary gear
 
@@ -2618,10 +2625,10 @@ from to 4...8. Planetary gears can handle large reductions and give huge torque
 capability. They have high efficiency and are very compact. At the same time
 such gears are expensive to manufacture and can be noisy at high speeds.
 
-![gear-planetary-stage2](./images/gear_planetary_stage2.png) *Fig.5. Planetary
-stage*.
+![doc-gear-planetary-stage2](./images/gear_planetary_stage2.png) *Fig.5.
+Planetary stage*.
 
-![gear-bevel-stage2](./images/gear_bevel_stage2.png) *Fig.6. Bevel stage*.
+![doc-gear-bevel-stage2](./images/gear_bevel_stage2.png) *Fig.6. Bevel stage*.
 
 ##### Bevel gear
 
@@ -2638,7 +2645,7 @@ presented below.
 Gearboxes comprising several helical stages (Fig.7) are used generally in
 heavy-duty applications. They are quite efficient and can have many stages.
 
-![hel-hel-hel-motor](./images/hel-hel-hel-motor.png) *Fig.7. Gearbox with 3
+![doc-hel-hel-hel-motor](./images/hel-hel-hel-motor.png) *Fig.7. Gearbox with 3
 helical stages and a motor*.
 
 In the configuration presented in Fig.8 the input and output shafts are arranged
@@ -2649,17 +2656,17 @@ reducers in applications involving right angle drives. They are characterized by
 high efficiency and can extend to extremely high reduction ratios (even to
 1700:1).
 
-![bel-3hel](./images/bel-3hel.png) *Fig.8. 1 bevel and 1 helical stage*.
+![doc-bel-3hel](./images/bel-3hel.png) *Fig.8. 1 bevel and 1 helical stage*.
 
 Some more examples are presented in Fig. 9-10.
 
-![worm-hel-conv](./images/worm-hel-conv.png) *Fig.9. Worm gear and helical
+![doc-worm-hel-conv](./images/worm-hel-conv.png) *Fig.9. Worm gear and helical
 stages for conveyor drive*.
 
-![wind-turbine-gear-plan-hel-hel](./images/wind-turbine-gear-plan-hel-hel.png)
+![doc-wind-turbine-gear-plan-hel-hel](./images/wind-turbine-gear-plan-hel-hel.png)
 *Fig.10. Gearbox with one planetary and two helical stages for a wind turbine.*.
 
-![plan-plan-plan-hel](./images/plan-plan-plan-hel.png) *Fig.11. Gearbox with
+![doc-plan-plan-plan-hel](./images/plan-plan-plan-hel.png) *Fig.11. Gearbox with
 three planetary and one helical stage for a wind turbine*.
 
 Efficiency of any combination is the product of efficiencies of the stages,
@@ -2667,7 +2674,7 @@ therefore, efficiency of several stages is lower than single-stage solution.
 Fig.12 presents efficiencies of some combinations of stages. Note that lower rpm
 means higher gear ratio.
 
-![gears-effs](./images/gears_effs.png) *Fig.12. Efficiencies of various
+![doc-gears-effs](./images/gears_effs.png) *Fig.12. Efficiencies of various
 combinations*.
 
 ***
@@ -2688,7 +2695,7 @@ different FC types are quite diverse in the amount of produced harmonics and so
 are the networks in their sensitivity. The decision whether to use an individual
 supply transformer or not must be made case by case.
 
-![trafo](./images/trafo.png) *Fig.1. Transformer example.*
+![doc-trafo](./images/trafo.png) *Fig.1. Transformer example.*
 
 The supply transformer placed between the grid and the FC covers several
 different tasks:
@@ -2770,10 +2777,10 @@ possible for an improperly protected wet-type transformer to explode. And,
 depending on the application, liquid-filled transformers may require a
 containment trough for protection against possible leaks of the fluid.
 
-![trafo-dry2](./images/Trafo_dry2.png) *Fig.2. Dry transformer (without
+![doc-trafo-dry2](./images/Trafo_dry2.png) *Fig.2. Dry transformer (without
 enclosure).*
 
-![trafo-oil2](./images/Trafo_oil2.png) *Fig.3. Oil-filled transformer.*
+![doc-trafo-oil2](./images/Trafo_oil2.png) *Fig.3. Oil-filled transformer.*
 
 Arguably, when choosing transformers, the changeover point between dry-types and
 wet-types is between 500 kVA to about 2.5 MVA, with dry-types used for the lower
@@ -2831,7 +2838,7 @@ undefined
 
 ## title: Power cables
 
-![power-cable](./images/power-cable.png) *Fig.1. Medium voltage cable.*
+![doc-power-cable](./images/power-cable.png) *Fig.1. Medium voltage cable.*
 
 ### Cable parameters
 
@@ -2999,7 +3006,7 @@ the converter, as well as for other components of the system. The machine for
 example can be at the open air while the converter in a dry electric room with
 air conditioning or a container (Fig.1).
 
-![container](./images/container.png) *Fig.1. Container example.*
+![doc-container](./images/container.png) *Fig.1. Container example.*
 
 The coefficient of power derating with ambient temperature $$k\_a$$ is defined as
 permissible output in % of rated output as function of ambient temperature
@@ -3064,14 +3071,14 @@ undefined
 
 Equipment can be installed in quite demanding environments (e.g. Fig 1).
 
-![em-protection](./images/EM_protection.png) *Fig.1. Conveyor*.
+![doc-em-protection](./images/EM_protection.png) *Fig.1. Conveyor*.
 
 The IP rating (International Protection) is used to determine the degree of
 protection provided by an enclosure. It is a standard maintained by IEC 60529.
 The IP rating is made up of 2 digits.
 
-![em-protection-table](./images/EM_protection_table.png) *Fig.2. Examples of IP
-classes*.
+![doc-em-protection-table](./images/EM_protection_table.png) *Fig.2. Examples of
+IP classes*.
 
 In *DriveConstructor* everything is simplified to only two protection variants:
 "low" and "high".
@@ -3113,8 +3120,8 @@ the FC. FC with higher protection class in more expensive.
   between the inside and outside of the frame, but does not make the frame
   completely air tight.
 
-![em-protection-ex](./images/EM_protection_ex.png) *Fig.3. Open drip proof motor
-example*.
+![doc-em-protection-ex](./images/EM_protection_ex.png) *Fig.3. Open drip proof
+motor example*.
 
 IP21/23 machine would have better cooling so it may be \~20% lighter and more
 compact than IP54/55 machine (aslo cheaper). Inspite of their higher cost
@@ -3141,14 +3148,15 @@ pattern according to IEC34 are presented in the chart (Fig.1). *S1*, *S2* and
 contains also overload, marked *"D"* (when the load is above the rated value it
 is called *overload*).
 
-![duty-cycles3](./images/duty_cycles3.png) *Fig.1. Standard duty cycles*.
+![doc-duty-cycles3](./images/duty_cycles3.png) *Fig.1. Standard duty cycles*.
 
 *Duty* is the ratio of the time at full load to the total time. In
 *DriveConstructor* the range to choose from is 50...100%. *Duty cycle period* is
 the time before the load pattern repeats itself. In *DriveConstructor* the range
 to choose from is 0,1...100 min.
 
-![duty-cycles2](./images/duty_cycles2.png) *Fig.2. Duties of 25, 50 and 75%*.
+![doc-duty-cycles2](./images/duty_cycles2.png) *Fig.2. Duties of 25, 50 and
+75%*.
 
 Both *duties* and *overloads* have similar thermal effect. When the equipment is
 loaded (state "ON" in Fig.3) the temperature inside the component goes up. When
@@ -3156,14 +3164,14 @@ load is removed (state "OFF" in Fig.3) then the temperature decreases. The rate
 of the temperature increase or decrease is defined by thermal constant of this
 particular component.
 
-![duty-cycles-temp](./images/duty_cycles_temp.png) *Fig.3. Duties and
+![doc-duty-cycles-temp](./images/duty_cycles_temp.png) *Fig.3. Duties and
 temperature inside the loaded component*.
 
 To illustrate how overloads are defined in *DriveConstructor* Fig.4 presents
 overload of 100%. The reference is rated load which is taken as 100%. The
 overload of 100% means the overload amplitude is 200%.
 
-![overloads](./images/overloads.png) *Fig.4. Overload of 100%*.
+![doc-overloads](./images/overloads.png) *Fig.4. Overload of 100%*.
 
 Different components have different tolerance to overloads. Even different
 electric machines have different overload tolerance; induction machines can
@@ -3218,7 +3226,7 @@ Electric machine, being an electro-mechanical converter, must be selected based
 on both mechanical parameters (torques and speeds) and electrical parameters
 (voltages and currents) - see Fig.1.
 
-![longest-circuit-2](./images/longest_circuit_2.png) *Fig.1*.
+![doc-longest-circuit-2](./images/longest_circuit_2.png) *Fig.1*.
 
 For the system part between electric machine and the grid the components are
 selected according to the electrical parameter - voltages and currents.
@@ -3228,7 +3236,7 @@ selected according to the electrical parameter - voltages and currents.
   converter
 * frequency converter voltage must match voltage of the grid
 
-![mot-fc-grid](./images/mot_fc_grid.png) *Fig. 2*.
+![doc-mot-fc-grid](./images/mot_fc_grid.png) *Fig. 2*.
 
 * For systems with transformer between the grid and the frequency converter:
 * electric machine's voltage and current must match voltage and current of the
@@ -3237,7 +3245,7 @@ selected according to the electrical parameter - voltages and currents.
   of the transformer
 * transformer HV-side voltage must match voltage of the grid
 
-![mot-fc-trf-grid](./images/mot_fc_trf_grid.png) *Fig. 3*.
+![doc-mot-fc-trf-grid](./images/mot_fc_trf_grid.png) *Fig. 3*.
 
 For the system part between the electric machine and the mechanism the
 components are selected according to mechanical parameters - torques and speeds.
@@ -3246,13 +3254,13 @@ components are selected according to mechanical parameters - torques and speeds.
 * electric machine's torque and speed must match torque and speed of the
   mechanism
 
-![mech-mot](./images/mech_mot.png) *Fig. 4*.
+![doc-mech-mot](./images/mech_mot.png) *Fig. 4*.
 
 * For systems with gearbox:
 * gearbox torque and speed must match torque and speed of the mechanism
 * electric machine's torque and speed must match torque and speed of the gearbox
 
-![mech-gear-mot](./images/mech_gear_mot.png) *Fig. 5*.
+![doc-mech-gear-mot](./images/mech_gear_mot.png) *Fig. 5*.
 
 ##### Matching the torques
 
@@ -3262,17 +3270,17 @@ of the driven mechanism as shown in Fig. 6 for the different mechanisms; pump
 6,e,f). Note than overload curves of the drive system should be above the
 overload curves of the mechanisms.
 
-![pump-curves-vs-drive1](./images/pump_curves_vs_drive1.png) *(a)*
+![doc-pump-curves-vs-drive1](./images/pump_curves_vs_drive1.png) *(a)*
 
-![wind-curves-vs-drive3](./images/wind_curves_vs_drive3.png) *(b)*
+![doc-wind-curves-vs-drive3](./images/wind_curves_vs_drive3.png) *(b)*
 
-![conveyor-curves-vs-drive1](./images/conveyor_curves_vs_drive1.png) *(c)*
+![doc-conveyor-curves-vs-drive1](./images/conveyor_curves_vs_drive1.png) *(c)*
 
-![conveyor-curves-vs-drive3](./images/conveyor_curves_vs_drive3.png) *(d)*
+![doc-conveyor-curves-vs-drive3](./images/conveyor_curves_vs_drive3.png) *(d)*
 
-![winch-curves-vs-drive2](./images/winch_curves_vs_drive2.png) *(e)*
+![doc-winch-curves-vs-drive2](./images/winch_curves_vs_drive2.png) *(e)*
 
-![winch-curves-vs-drive1](./images/winch_curves_vs_drive1.png) *(f)*
+![doc-winch-curves-vs-drive1](./images/winch_curves_vs_drive1.png) *(f)*
 
 *Fig. 6. System curves vs load curves for various mechanisms/application*.
 
@@ -3311,7 +3319,7 @@ defense and aerospace, transport and power generation, household appliances,
 etc. One of the possible classifications of the applications is presented in
 Fig. 1.
 
-![drives-applications-new](./images/drives_applications_new.png)
+![doc-drives-applications-new](./images/drives_applications_new.png)
 
 *Fig. 1. Classification of the applications where VSD are used*.
 
@@ -3382,7 +3390,7 @@ variable speed usually demonstrate impressive energy savings compared to
 constant speed operation. The way of achieving the savings can be demonstrated
 for a basic water supply system shown in Fig. 1.
 
-![pump](./images/Pump.png)
+![doc-pump](./images/Pump.png)
 
 *Fig. 1. Water supply with throttle regulation*.
 
@@ -3414,11 +3422,11 @@ Another problem of throttling is reduced efficiency of the pump when the pump's
 operating point is shifted from the rated due to the change in the performance
 of the hydraulic network (the throttle is part of the network).
 
-![pump-chars](./images/Pump_chars.png) *(a)*
+![doc-pump-chars](./images/Pump_chars.png) *(a)*
 
-![pump-chars2](./images/Pump_chars2.png) *(b)*
+![doc-pump-chars2](./images/Pump_chars2.png) *(b)*
 
-![pump-chars-energies](./images/Pump_chars_energies.png) *(c)*
+![doc-pump-chars-energies](./images/Pump_chars_energies.png) *(c)*
 
 *Fig. 2. Throttle control*.
 
@@ -3433,7 +3441,7 @@ pump, *h* is *head* in *m* and *q* is *flow* in $$m^3 / h$$.
 Thus, lower efficiency of the pump lead to increase power consumption. Fig. 3
 shows the efficiency map of the pump (lines of equal efficiency).
 
-![pump-chars-efficiency](./images/Pump_chars_efficiency.png)
+![doc-pump-chars-efficiency](./images/Pump_chars_efficiency.png)
 
 *Fig. 3. Pump efficiency*.
 
@@ -3443,7 +3451,7 @@ performed by changing the rotational speed of the pump's impeller. Typically, a
 system with pump speed control operates in a closed loop on the feedback signal
 from the pressure sensor (Fig. 4).
 
-![pump-fc](./images/Pump_fc.png)
+![doc-pump-fc](./images/Pump_fc.png)
 
 *Fig. 4. Water supply FC control*.
 
@@ -3453,11 +3461,11 @@ pump speed, which increases the flow rate and the pressure. Likewise, when the
 pressure rises above a preset value, the flow rate needs to be reduced - this is
 done by reducing the pump's speed.
 
-![pump-chars-fc](./images/Pump_chars_fc.png) *(a)*
+![doc-pump-chars-fc](./images/Pump_chars_fc.png) *(a)*
 
-![pump-chars-energy](./images/Pump_chars_energy.png) *(b)*
+![doc-pump-chars-energy](./images/Pump_chars_energy.png) *(b)*
 
-![pump-chars-efficiency-fc](./images/Pump_chars_efficiency_fc.png) *(c)*
+![doc-pump-chars-efficiency-fc](./images/Pump_chars_efficiency_fc.png) *(c)*
 
 *Fig. 5. Impeller speed regulation*.
 
@@ -3496,7 +3504,8 @@ In the proposed *Exercises* the systems should be usually designed for one
 criterion. In Fig. 1 the list of criteria to choose from contains Cost,
 Efficiency and Life Cycle Cost (LCC).
 
-![optimization-setting](./images/optimization_setting.png) *Fig. 1. The task*.
+![doc-optimization-setting](./images/optimization_setting.png) *Fig. 1. The
+task*.
 
 The process of selection of the variables (system structure and components with
 concrete specification) to reach the best score on the chosen criterion can be
@@ -3516,19 +3525,20 @@ different operational aspects will provide a more credible answer. One of such
 measures is off course efficiency (including partial loads!). An example is
 shown in Fig.3.
 
-![qualitative-comparison-1](./images/qualitative_comparison_1.png)
+![doc-qualitative-comparison-1](./images/qualitative_comparison_1.png)
 
 *Fig. 2. Qualitative comparison of motor technology*.
 
-![comparing-eff-curves](./images/comparing_eff_curves.png) *Fig. 3. Comparing
-efficiencies*.
+![doc-comparing-eff-curves](./images/comparing_eff_curves.png) *Fig. 3.
+Comparing efficiencies*.
 
 It is relatively easy to draw conclusions on which system is best (optimal) for
 the application when there is only one criterion, e.g. cost. It is more
 challenging to benchmark on several criteria. In such case Spider Diagram can be
 the right tool to visualize the results (Fig.4).
 
-![benchmarking](./images/benchmarking.png) *Fig. 4. Quantitative comparison*.
+![doc-benchmarking](./images/benchmarking.png) *Fig. 4. Quantitative
+comparison*.
 
 ### Life Cycle Cost (LCC)
 
@@ -3540,7 +3550,7 @@ which gives prediction of how often the machine will fail. CONR would include
 cost of repair and cost of stopped production. CONR is not included in
 *DriveConstructor*.
 
-![cost-of-ownership](./images/cost_of_ownership.png) *Fig. 5. Cost of
+![doc-cost-of-ownership](./images/cost_of_ownership.png) *Fig. 5. Cost of
 ownership*.
 
 
@@ -3567,7 +3577,7 @@ types of negative influence of the converter on the surrounding equipment
 * through the converter housing
 * from power and control cables
 
-![emc-emissions](./images/emc_emissions.png)
+![doc-emc-emissions](./images/emc_emissions.png)
 
 *Fig. 1. Emissions from the drive system*.
 
@@ -3579,15 +3589,15 @@ forms of current and voltage at the input of the 400 V, 75 kW FC with an
 uncontrolled 6-pulse rectifier. The current wave is usually distorted much more
 than the voltage.
 
-![fc-input-i](./images/fc_input_i.png) *(a)*
+![doc-fc-input-i](./images/fc_input_i.png) *(a)*
 
-![fc-input-u](./images/fc_input_u.png) *(b)*
+![doc-fc-input-u](./images/fc_input_u.png) *(b)*
 
 *Fig. 2. Waveforms of current (a) and voltage (b)*.
 
-![harmonics-c](./images/harmonics_c.png) *(a)*
+![doc-harmonics-c](./images/harmonics_c.png) *(a)*
 
-![harmonics-u](./images/harmonics_u.png) *(b)*
+![doc-harmonics-u](./images/harmonics_u.png) *(b)*
 
 *Fig. 3. Fourier transformation of current (a) and voltage (b)*.
 
@@ -3637,9 +3647,9 @@ Influence of the topology and the filters is presented in a few diagrams below.
 Standard uncontrolled 6-pulse rectifier with a choke as the input filter
 (Fig.4,a) produced quite a lot of current distortion (Fig.4,b).
 
-![6p-with-choke](./images/6p_with_choke.png) *(a)*
+![doc-6p-with-choke](./images/6p_with_choke.png) *(a)*
 
-![thdi28](./images/THDi28.png) *(b)*
+![doc-thdi28](./images/THDi28.png) *(b)*
 
 *Fig. 4. 6-pulse rectifier with a choke; system topology (a) and current
 waveform with THD(i)=28% (b).*
@@ -3647,9 +3657,9 @@ waveform with THD(i)=28% (b).*
 12-pulse scheme with 3-winding transformer (Fig.5,a) reduces harmonics injected
 into the grid (Fig. 5,b) compared to 6-pulse scheme with 2-winding transformer.
 
-![12p](./images/12p.png) *(a)*
+![doc-12p](./images/12p.png) *(a)*
 
-![thdi15](./images/THDi15.png) *(b)*
+![doc-thdi15](./images/THDi15.png) *(b)*
 
 *Fig. 5. Topology of the 12-pulse system (a) and current waveform with
 THD(i)=15% (b)*.
@@ -3657,9 +3667,9 @@ THD(i)=15% (b)*.
 AFE converter provides lowest THD(i) (Fig. 6,b) but a bit higher THD(u) than
 12-pulse scheme.
 
-![fc-with-lcl](./images/fc_with_LCL.png) *(a)*
+![doc-fc-with-lcl](./images/fc_with_LCL.png) *(a)*
 
-![thdi5](./images/THDi5.png) *(b)*
+![doc-thdi5](./images/THDi5.png) *(b)*
 
 *Fig. 6. AFE converter with LCL filter (a) and the current waveform with
 THD(i)=5% (b)*.
@@ -3706,7 +3716,7 @@ can either compensate each other (when pulses have different polarity) or add up
 as shown in Fig. 1, the total pulse at the terminals of the machine can reach
 the value at which the insulation may break down.
 
-![reflection](./images/reflection.png)
+![doc-reflection](./images/reflection.png)
 
 *Fig. 1. Superposition of voltage pulses at the terminals of the machine*.
 
@@ -3723,9 +3733,9 @@ superimposed on each other. The effect of superposition of forward and backward
 waves on the terminals of the machine resulting in voltage oscillations is
 obvious.
 
-![impuls-2signals](./images/impuls_2signals.png) *(a)*
+![doc-impuls-2signals](./images/impuls_2signals.png) *(a)*
 
-![dudt-pulses](./images/dudt_pulses.png) *(b)*
+![doc-dudt-pulses](./images/dudt_pulses.png) *(b)*
 
 *Fig. 2. Voltage pulses: the leading edge of the pulse at the output of the FC
 and at the terminals of the machine (a), both edges of the pulse at the
@@ -3739,9 +3749,9 @@ spikes as shown in Fig 3,a. This leads to partial discharges in the insulation
 (Fig.3,b). Constant partial discharges lead to aging of insulation and
 subsequent destruction (breakdown).
 
-![dudt-effect](./images/dudt_effect.png) *(a)*
+![doc-dudt-effect](./images/dudt_effect.png) *(a)*
 
-![ins-breakdown-e](./images/ins_breakdown_E.png) *(b)*
+![doc-ins-breakdown-e](./images/ins_breakdown_E.png) *(b)*
 
 *Fig. 3. du/dt-effect: origins (a) and consequences (b)*.
 
@@ -3755,7 +3765,7 @@ reference, the voltages Va, Vb and Vc can either be +Vdc/2 or -Vdc/2, where Vdc
 is the DC-link voltage. As a result, depending on the state of the switches, the
 common mode voltage can take one of the values $$\pm$$Vdc/2 and $$\pm$$Vdc/6.
 
-![common-mode-voltage](./images/common_mode_voltage.png)
+![doc-common-mode-voltage](./images/common_mode_voltage.png)
 
 *Fig. 4. Common-mode voltage*.
 
@@ -3766,7 +3776,7 @@ lead to premature bearing failures. Another example of the negative impacts is
 HF leakage currents through ground cables which can interfere with control
 cables.
 
-![bearing-currents](./images/Bearing_currents.png)
+![doc-bearing-currents](./images/Bearing_currents.png)
 
 *Fig. 5. The paths for HF currents*.
 
@@ -3791,9 +3801,9 @@ below with the help of the four cases related to operation of a tidal turbine
 and a winch. The drive trains in the four cases include a gearbox, an electric
 machine and a brake (Fig.1).
 
-![tt-with-gear](./images/TT_with_gear.png) *(a)*
+![doc-tt-with-gear](./images/TT_with_gear.png) *(a)*
 
-![winch-with-gear](./images/winch_with_gear.png) *(b)*
+![doc-winch-with-gear](./images/winch_with_gear.png) *(b)*
 
 *Fig. 1. Mechanical drive trains for a tidal turbine (a) and a winch (b)*.
 
@@ -3809,7 +3819,7 @@ is performed by the water acting on the propeller trying to accelerate it,
 therefore, it is useful to look at the system "from the propeller side" as in
 Fig.2.
 
-![tt-with-gear2](./images/TT_with_gear2.png)
+![doc-tt-with-gear2](./images/TT_with_gear2.png)
 
 *Fig. 2. Torques and inertia seen by the propeller.*
 
@@ -3860,9 +3870,9 @@ components. Therefore, a gearbox with a high gear ratio plays a negative role.
 Permanent acceleration and braking is typical for example in active heave
 compensation winch deploying ROV, which is moving with the waves.
 
-![winch-with-gear3](./images/winch_with_gear3.png) *(a)*
+![doc-winch-with-gear3](./images/winch_with_gear3.png) *(a)*
 
-![winch-with-gear2](./images/winch_with_gear2.png) *(b)*
+![doc-winch-with-gear2](./images/winch_with_gear2.png) *(b)*
 
 *Fig. 3. Torques and inertia seen by the motor (a) and the winch (b)*.
 
