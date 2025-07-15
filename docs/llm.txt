@@ -919,9 +919,9 @@ the current variation. In some application, e.g. pumps, the variation is not
 significant and can be called "low", while in other applications, e.g. conveyor
 or winch, the variation can be significant, and, therefore can be called "high".
 Examples of what can be called "high overloads" and "low overloads" are
-presented in Fig.1.
+presented in Fig.10.
 
-**Image: Low/high overload capability Description: Graph showing frequency converter overload capability with low overload and high overload characteristics. The diagram illustrates different overload ratings for various frequency converter applications.** *Fig.1. "High overloads" and "low
+**Image: Low/high overload capability Description: Graph showing frequency converter overload capability with low overload and high overload characteristics. The diagram illustrates different overload ratings for various frequency converter applications.** *Fig.10. "High overloads" and "low
 overloads"*.
 
 Choosing the FC the designer should take this aspect into account. Each FC has
@@ -944,7 +944,7 @@ Explanation is presented in Fig.10. Note $$I\_c$$ which is rated continuous
 current, which is not used in practice. Short-term (10 s) high current of up to
 200% of $$I\_H$$ is acceptable for any converter.
 
-**Image: Overload characteristics chart Description: Chart showing frequency converter overload characteristics with time-current curves. The diagram illustrates thermal protection and overload capabilities of frequency converters.** *Fig.10. Current overloads of
+**Image: Overload characteristics chart Description: Chart showing frequency converter overload characteristics with time-current curves. The diagram illustrates thermal protection and overload capabilities of frequency converters.** *Fig.10a. Current overloads of
 conventional FC*.
 
 ***
