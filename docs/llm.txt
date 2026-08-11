@@ -1737,6 +1737,8 @@ DriveConstructor includes the following components:
 
 
 
+
+
 <img alt="doc-power-cable" src="__img0" /> &#x2A;Fig.1. Medium voltage cable.*
 
 ### Cable parameters [#cable-parameters]
@@ -1790,6 +1792,22 @@ densities than one big cable with lower current density. In *DriveConstructor*
 it is possible to choose number of runs from the following options: "auto", 1,
 2, 4. When "auto" is chosen, *DriveConstructor* will calculate optimal number of
 runs automatically.
+
+#### DFIM cable-section approximation [#dfim-cable-section-approximation]
+
+The power circuit of a DFIM wind-turbine system has two parallel paths: one
+connected to the stator winding and one connected to the rotor winding (Fig. 2).
+The cable length entered in DriveConstructor is the physical stator-cable route.
+The stator voltage drop is calculated using that physical length.
+
+To approximate the additional rotor-circuit cable, installed cable quantity and
+price are multiplied by 1.33. Resistive loss is not proportional to installed
+quantity: under the simplified equal-resistance assumption and 30% rotor-current
+fraction, combined stator and rotor loss is multiplied by $1 + 0.3^2 = 1.09$.
+The rotor circuit is not modeled as a separate cable candidate.
+
+<img alt="DFIM-system-cables" src="__img1" /> &#x2A;Fig.2. Stator and
+rotor cable sections from DFIM system.*
 
 
 # Protection (/docs/textbook/components/protection)
@@ -2000,7 +2018,7 @@ Systems description
 * [Sizing principles](/docs/textbook/systems/sizing-principals)
 * [Variable speed in applications](/docs/textbook/systems/variable-speed)
 * [Energy saving with the help of VSD](/docs/textbook/systems/energy-saving)
-* [What is a optimal system](/docs/textbook/systems/optimal-systems)
+* [What is an optimal system](/docs/textbook/systems/optimal-systems)
 * [Frequency converter influence on the grid](/docs/textbook/systems/influence-grid)
 * [Frequency converter influence on the electric machine](/docs/textbook/systems/influence-machine)
 * [Inertia in the drive train](/docs/textbook/systems/inertia)
@@ -2991,7 +3009,7 @@ transformer.
 ### Load characteristics [#load-characteristics]
 
 There is theoretical maximum power which is possible to extract following the
-maximum torque curve shown in Fig. 3-4. It can be seen that generator speed
+maximum torque curve shown in Fig. 4-5. It can be seen that generator speed
 increases in Region II and is kept almost constant in Region III.
 
 <img alt="doc-wt-gen-torque" src="__img3" /> &#x2A;Fig.4. Generator speed vs
@@ -3113,6 +3131,10 @@ Relevant information
 
 
 
+
+
+
+
 ## What is included [#what-is-included]
 
 Only rotating AC machines with cylindrical cores with inner rotor are included
@@ -3121,28 +3143,40 @@ into this version of *DriveConstructor*. It is possible to choose between:
 * *SCIM* - Squirrel Cage Induction Machine (Fig.1),
 * *SyRM* - Synchronous Reluctance Machine (Fig.2),
 * *PMSM* - Permanent Magnet Synchronous Machine (rotor shown in Fig.3).
+* *DFIM* - Doubly Fed Induction Machine (Fig. 4).
 
 <img alt="doc-scim" src="__img0" /> *Fig.1A. SCIM*.
 
-<img alt="doc-scim-simple1" src="__img1" /> *Fig.1B. icon of SCIM*.
+<img alt="doc-scim-simple1" src="__img1" /> *Fig.1B. Icon
+of SCIM*.
 
 <img alt="doc-syrm" src="__img2" /> *Fig.2A. SyRM*.
 
-<img alt="doc-syrm-simple1" src="__img3" /> *Fig.2B. icon of SyRM*.
+<img alt="doc-syrm-simple1" src="__img3" /> *Fig.2B. Icon
+of SyRM*.
 
-<img alt="doc-pmsm-rotor" src="__img4" /> *Fig.3A. Rotor of PMSM*.
+<img alt="doc-pmsm-rotor" src="__img4" /> *Fig.3A. Rotor of
+PMSM*.
 
-<img alt="doc-pm-motor-simple1" src="__img5" /> *Fig.3B. icon of PMSM*.
+<img alt="doc-pm-motor-simple1" src="__img5" />
+*Fig.3B. Icon of PMSM*.
 
-SCIM, PMSM and SyRM can be selected for any application and any drive train
-topology. SyRM are available for quite limited range of powers. So far only LV
-SyRM products are known, therefore only LV FC can be used to drive SyRM.
+<img alt="doc-dfim-figure-textbook" src="__img6" />
+*Fig.4A. DFIM figure*
+
+<img alt="doc-dfim-simple1" src="__img7" /> *Fig.4B.
+Icon of DFIM*.
+
+SCIM, PMSM and SyRM can be selected for any application and any drive-train
+topology. In the current version, DFIM is available only for geared wind-turbine
+topologies. SyRM is available for a limited range of powers. So far only LV SyRM
+products are known, therefore only LV FC can be used to drive SyRM.
 
 Performances of the machines of different types are different. Usually:
 
-* Efficiency (SCIM) \< Efficiency (SyRM) \< Efficiency (PMSM)
-* Cost (SCIM) \< Cost (SyRM) \< Cost (PMSM)
-* Size (SCIM) > Size (SyRM) > Size (PMSM)
+* Efficiency (SCIM) \< Efficiency (SyRM) \< Efficiency (DFIM) \< Efficiency (PMSM)
+* Cost (SCIM) \< Cost (SyRM) \< Cost (DFIM) \< Cost (PMSM)
+* Size (DFIM) > Size (SCIM) > Size (SyRM) > Size (PMSM)
 
 ## Key parameters of electric machines [#key-parameters-of-electric-machines]
 
@@ -3152,7 +3186,7 @@ Power rating of the electric machines available in *DriveConstructor* is
 according to IEC 60072-1 which suggests the following preferred ratings (based
 on a subset of the R40 series) for motors (in kW) and generators (in kVA):
 
-<img alt="doc-em-rated-powers" src="__img6" />
+<img alt="doc-em-rated-powers" src="__img8" />
 [Source: IEC](http://www.openelectrical.org/wiki/index.php?title=Standard_IEC_Ratings)
 
 Note that asterix-marked powers are "secondary series" ratings and are only to
@@ -3161,7 +3195,7 @@ be used in cases of special need.
 In *DriveConstructor* we use the following series of powers (in kW): 1.1, 1.5,
 2.2, 3, 4, 5.5, 7.5, 11, 15, 18.5, 22, 30, 37, 45, 55, 75, 90, 110, 132, 160,
 200, 250, 280, 315, 355, 400, 450, 500, 560, 630, 710, 800, 900, 1000, 1250,
-1400, 1600, 2000, 2500, 3150, 4000.
+1400, 1600, 2000, 2500, 3150, 4000, 5000, 6000 and 7100.
 
 Our list is shorter than the IEC one as we picked up only the most used powers.
 
@@ -3189,13 +3223,13 @@ It is normally not possible to design LV machines for very high powers as
 currents would become too high and cables would become too thick to be
 practical. LV machines are normally produced for powers from fractions of kW up
 to a few MW (in *DriveConstructor* up to 2 MW), MV machines - from about 0,2 MW
-to 10...20 MW (in *DriveConstructor* up to 5 MW), in some cases up to 100 MW!
+to 10...20 MW (in *DriveConstructor* up to 7.1 MW), in some cases up to 100 MW!
 
 Slot designs of LV and MV machines look quite different:
 
-<img alt="doc-lv-slot" src="__img7" /> &#x2A;Fig.4. LV slot.*
+<img alt="doc-lv-slot" src="__img9" /> &#x2A;Fig.5. LV slot.*
 
-<img alt="doc-hv-slot" src="__img8" /> &#x2A;Fig.5. HV slot.*
+<img alt="doc-hv-slot" src="__img10" /> &#x2A;Fig.6. HV slot.*
 
 #### Rated synchronous speed [#rated-synchronous-speed]
 
@@ -3205,7 +3239,9 @@ poles 2, 4, 6, 8 and 10 rated synchronous speed is 3000, 1500, 1000, 750 and
 600, respectively.
 
 SCIM have slip, so its rated speed is lower than rated synchronous speed by a
-few percent. SyRM and PMSM have rated speed equal rated synchronous speed.
+few percent. SyRM and PMSM have rated speed equal to rated synchronous speed. A
+DFIM controls rotor slip and, in this simplified model, operates from 70% to
+130% of synchronous speed.
 
 It is obvious that a machine designed for delivering high power is bigger than a
 machine designed for delivering low power. It is less obvious that the rated
@@ -3232,16 +3268,16 @@ to determine the efficiency level for their minimum energy performance standards
 (or IE2 in combination with a variable frequency drive) from 2015 for smaller
 motors and from 2017 covering also larger motors.
 
-<img alt="doc-efficiency-class1" src="__img9" />
+<img alt="doc-efficiency-class1" src="__img11" />
 
-*Fig.6. Cut-away of standard, energy-efficient, and premium efficiency motors.*
+*Fig.7. Cut-away of standard, energy-efficient, and premium efficiency motors.*
 
 Efficiency value for a certain class depends on power as shown on the diagram
 below:
 
-<img alt="doc-efficiency-class3" src="__img10" />
+<img alt="doc-efficiency-class3" src="__img12" />
 
-*Fig.7. Efficiency classes for 4-pole motors.*
+*Fig.8. Efficiency classes for 4-pole motors.*
 
 Efficiency at partial load (e.g. 25%, 50%) is lower than at rated load (100%).
 High efficiency class motors are larger and heavier, while lower IE class motors
@@ -3258,22 +3294,23 @@ the three classes presented below:
 
 * air-cooled self-cooled, designated *IC411*
 * air-cooled forced-cooled *IC416* (forced ventilation independent from the
-  shaft)
+  shaft speed)
 * water-cooled *IC71W*
 
-<img alt="doc-cooling1" src="__img11" /> *Fig.8. IC411*.
+<img alt="doc-cooling1" src="__img13" /> *Fig.9. IC411*.
 
-<img alt="doc-cooling2" src="__img12" /> *Fig.9. IC416. Note separate motor for
-driving the fan*.
+<img alt="doc-cooling2" src="__img14" /> *Fig.10. IC416. Note
+separate motor for driving the fan*.
 
-<img alt="doc-cooling3" src="__img13" /> *Fig.10. IC71W. Note the cooling mantle*.
+<img alt="doc-cooling3" src="__img15" /> *Fig.11. IC71W. Note
+the cooling mantle*.
 
-Fig. 11 shows that *IC416* provides more load capacity at low speeds than
+Fig. 12 shows that *IC416* provides more load capacity at low speeds than
 *IC411*. It is because the independently fed fan motor of *IC416* configuration
 allows maintaining the cooling air flow independently on the rotor speed.
 
-<img alt="doc-cooling-411-vs-416" src="__img14" /> *Fig.11. IC411 vs
-IC416*.
+<img alt="doc-cooling-411-vs-416" src="__img16" />
+*Fig.12. IC411 vs IC416*.
 
 Water-cooled machines can be 20-40% smaller than air-cooled IP54/55 machines. If
 cooling water is available, some economies in motor size can be obtained by the
@@ -3289,18 +3326,19 @@ difference between mounting variants is reflected in price. Flange-mounted
 machine would have 1-3% higher price and flange\&foot-mounted - by 5%, compared
 to the basic foot-mounted design.
 
-<img alt="doc-em-mounting1" src="__img15" /> *Fig.12. B3*
+<img alt="doc-em-mounting1" src="__img17" /> *Fig.13. B3*
 
-<img alt="doc-em-mountingb5" src="__img16" /> *Fig.13. B5*
+<img alt="doc-em-mountingb5" src="__img18" /> *Fig.14. B5*
 
-<img alt="doc-em-mountingb35" src="__img17" /> *Fig.14. B35*
+<img alt="doc-em-mountingb35" src="__img19" /> *Fig.15.
+B35*
 
 #### Shaft height [#shaft-height]
 
 IEC and NEMA has standardized motor dimensions, including shaft height.
 
-<img alt="doc-shaft-height" src="__img18" /> &#x2A;Fig.15. Shaft height
-illustration.*
+<img alt="doc-shaft-height" src="__img20" /> &#x2A;Fig.16. Shaft
+height illustration.*
 
 Standard shaft heights row in mm: 56, 63, 71, 80, 90, 100, 112, 132, 160, 180,
 200, 225, 250, 280, 315, 355, 400, 450, 500, 560, 630, 710. If the shaft height
@@ -3493,13 +3531,16 @@ estimated life of
 
 
 
+
+
 ## Frequency converters general information [#frequency-converters-general-information]
 
 A typical frequency converter (FC) nowadays is a so-called voltage-source type -
 over 95% of all FC are voltage-source converters (VSC). This FC type has a
 DC-link with a capacitor bank across (see Fig.1).
 
-<img alt="doc-basic-fc-2" src="__img0" /> &#x2A;Fig.1. VSC topology.*
+<img alt="doc-basic-fc-2" src="__img0" /> &#x2A;Fig.1. VSC
+topology.*
 
 The voltage of the supply network with a constant frequency and amplitude is
 first rectified into DC voltage though with some ripples (Fig.2), and then it is
@@ -3507,8 +3548,8 @@ converted into the voltage with the required frequency and amplitude (Fig. 3).
 Note that the voltage waveform is made of pulses of varying duration, wherein
 the "fundamental" voltage is sinusoidal.
 
-<img alt="doc-rectification" src="__img1" /> &#x2A;Fig.2. Rectified current in
-the DC link.*
+<img alt="doc-rectification" src="__img1" /> &#x2A;Fig.2.
+Rectified current in the DC link.*
 
 <img alt="doc-pwm-voltage" src="__img2" /&#x3E; &#x2A;(a)*
 
@@ -3542,11 +3583,11 @@ FC can be 2-quadrant (2Q) and 4-quadrant (4Q):
 * 2Q FC can transfer power only in one direction - from the grid to the electric
   machine (motor),
 * 4Q FC can transfer power not only from the grid to the machine but also from
-  the machine (generator) to the grid.
+  the machine (generator) to the grid. This has to be chosen for a DFIM.
 
 Usually the operational mode (motoring, generating or both) of the application
 defines what FC should be chosen, 2Q or 4Q. For example a wind turbine requires
-4Q FC with fully-controlled inventor scheme at the grid side. Sometimes
+4Q FC with fully-controlled inverter scheme at the grid side. Sometimes
 operational requirements in applications which typically require 2Q, may require
 4Q - for example large fan with high inertia may require considerable braking
 capability to slow down in reasonably short time.
@@ -3563,31 +3604,44 @@ Some FC require input transformer, some don't.
 As in *DriveConstructor* we deal with VSC only, all the topologies included in
 the software and presented below have "VSC" in the designations.
 
+The FC in a DFIM system is connected to the rotor circuit. DriveConstructor
+approximates its rating as 30% of rated machine power, corresponding to the
+modeled maximum absolute slip of 30%. A schematic of this system is shown in
+Fig. 4.
+
+<img alt="doc-dfim-fc-schematic" src="__img4" />
+*Fig.4. Frequency converter in DFIM system*.
+
 ### Converters of 2-level topology [#converters-of-2-level-topology]
 
 ##### 2Q-2L-VSC-6p, 2Q-2L-VSC-12p and 4Q-2L-VSC [#2q-2l-vsc-6p-2q-2l-vsc-12p-and-4q-2l-vsc]
 
-2Q FC inventor scheme at the grid side can be 6-pulse ("6p") and 12-pulse
+2Q FC inverter scheme at the grid side can be 6-pulse ("6p") and 12-pulse
 ("12p"). Difference between "6p" and "12p" is in size, weight, cost, efficiency
 and influence on the grid (THD). 4Q FC is larger, heavier, more expensive and
 has lower efficiency than 2Q FC. 4Q produce lower THD in the grid. 2-level FC
 are usually LV.
 
-<img alt="doc-afe-dc2l-dfe-ing" src="__img4" /> *Fig.4a. 2Q-2L-VSC-6p*.
+<img alt="doc-afe-dc2l-dfe-ing" src="__img5" />
+*Fig.5a. 2Q-2L-VSC-6p*.
 
-<img alt="doc-afe-dc2l-dfe" src="__img5" /> *Fig.4b. Icon designation*.
+<img alt="doc-afe-dc2l-dfe" src="__img6" /> *Fig.5b.
+Icon designation*.
 
-Note that on Fig.4a motor side of the FC is the right side, while on Fig.4b -
-left side.
+Note that in Fig.5a the machine side of the FC is the right side, while in
+Fig.5b - left side.
 
-<img alt="doc-afe-dc2l-dfe12-ing" src="__img6" /> *Fig.5a.
-2Q-2L-VSC-12p*.
+<img alt="doc-afe-dc2l-dfe12-ing" src="__img7" />
+*Fig.6a. 2Q-2L-VSC-12p*.
 
-<img alt="doc-afe-dc2l-dfe12" src="__img7" /> *Fig.5b. Icon designation*.
+<img alt="doc-afe-dc2l-dfe12" src="__img8" />
+*Fig.6b. Icon designation*.
 
-<img alt="doc-afe-dc2l-afe-ing" src="__img8" /> *Fig.6a. 4Q-2L-VSC*.
+<img alt="doc-afe-dc2l-afe-ing" src="__img9" />
+*Fig.7a. 4Q-2L-VSC*.
 
-<img alt="doc-afe-dc2l-afe" src="__img9" /> *Fig.6b. Icon designation*.
+<img alt="doc-afe-dc2l-afe" src="__img10" /> *Fig.7b.
+Icon designation*.
 
 ### Converters with 3- and multi-level topologies [#converters-with-3--and-multi-level-topologies]
 
@@ -3595,28 +3649,36 @@ left side.
 
 3-level FC are usually MV. NPC stands for Neutral-Point Clamped.
 
-<img alt="doc-afe-dc3l-dfe12-ing" src="__img10" /> *Fig.7a.
-2Q-3L-NPC-VSC*.
+<img alt="doc-afe-dc3l-dfe12-ing" src="__img11" />
+*Fig.8a. 2Q-3L-NPC-VSC*.
 
-<img alt="doc-afe-dc3l-afe12" src="__img11" /> *Fig.7b. Icon designation*.
+<img alt="doc-afe-dc3l-afe12" src="__img12" />
+*Fig.8b. Icon designation*.
 
-<img alt="doc-afe-dc3l-afe-ing" src="__img12" /> *Fig.8a. 4Q-3L-NPC-VSC*.
+<img alt="doc-afe-dc3l-afe-ing" src="__img13" />
+*Fig.9a. 4Q-3L-NPC-VSC*.
 
-<img alt="doc-afe-dc3l-afe" src="__img13" /> *Fig.8b. Icon designation*.
+<img alt="doc-afe-dc3l-afe" src="__img14" /> *Fig.9b.
+Icon designation*.
 
 ##### 2Q-ML-SCHB-VSC and 4Q-ML-SCHB-VSC [#2q-ml-schb-vsc-and-4q-ml-schb-vsc]
 
 SCHB stands for Series-Connected H-Bridge.
 
-<img alt="doc-schb-2" src="__img14" /> *Fig.9a. 2Q-ML-SCHB-VSC topology*.
+<img alt="doc-schb-2" src="__img15" /> *Fig.10a.
+2Q-ML-SCHB-VSC topology*.
 
-<img alt="doc-schb-dfe-cell" src="__img15" /> *Fig.9b. 2Q-ML-SCHB-VSC cell*.
+<img alt="doc-schb-dfe-cell" src="__img16" /> *Fig.10b.
+2Q-ML-SCHB-VSC cell*.
 
-<img alt="doc-sc-hb-simple2" src="__img16" /> *Fig.9c. Icon designation*.
+<img alt="doc-sc-hb-simple2" src="__img17" /> *Fig.10c.
+Icon designation*.
 
-<img alt="doc-schb-afe-cell" src="__img17" /> *Fig.9d. 4Q-ML-SCHB-VSC cell*.
+<img alt="doc-schb-afe-cell" src="__img18" /> *Fig.10d.
+4Q-ML-SCHB-VSC cell*.
 
-<img alt="doc-sc-hb-simple3" src="__img18" /> *Fig.9e. Icon designation*.
+<img alt="doc-sc-hb-simple3" src="__img19" /> *Fig.10e.
+Icon designation*.
 
 ***
 
@@ -3653,8 +3715,8 @@ or winch, the variation can be significant, and, therefore can be called "high".
 Examples of what can be called "high overloads" and "low overloads" are
 presented in Fig.10.
 
-<img alt="doc-fc-lo-ho" src="__img19" /> &#x2A;Fig.10. "High overloads" and "low
-overloads"*.
+<img alt="doc-fc-lo-ho" src="__img20" /> &#x2A;Fig.10. "High
+overloads" and "low overloads"*.
 
 Choosing the FC the designer should take this aspect into account. Each FC has
 certain overload capability determined by several physical limitations such as
@@ -3672,12 +3734,12 @@ application, e.g. a conveyor, $I_H$ should be used and $I_H$ should be
 higher than $I_m$. Usually for HO applications acceptable overloads are 50%
 and FC current should then handle $1.5*I_H$.
 
-Explanation is presented in Fig.10. Note $I_c$ which is rated continuous
+Explanation is presented in Fig.11. Note $I_c$ which is rated continuous
 current, which is not used in practice. Short-term (10 s) high current of up to
 200% of $I_H$ is acceptable for any converter.
 
-<img alt="doc-fc-overloads" src="__img20" /> *Fig.10a. Current overloads of
-conventional FC*.
+<img alt="doc-fc-overloads" src="__img21" /> *Fig.11a.
+Current overloads of conventional FC*.
 
 ***
 
@@ -3693,13 +3755,16 @@ compactness and lower weight can be achieved by use of liquid (water) cooling.
 Fig.1 depicts a 250 kW low-voltage FC mounted on the wall in an enclosed area
 such as an electrical room.
 
-<img alt="doc-fc-cooling-air-nat" src="__img21" /&#x3E; &#x2A;(a)*
+<img alt="doc-fc-cooling-air-nat" src="__img22" /&#x3E;
+&#x2A;(a)*
 
-<img alt="doc-fc-cooling-air-ac" src="__img22" /&#x3E; &#x2A;(b)*
+<img alt="doc-fc-cooling-air-ac" src="__img23" /&#x3E;
+&#x2A;(b)*
 
-<img alt="doc-fc-cooling-air-wc" src="__img23" /&#x3E; &#x2A;(c)*
+<img alt="doc-fc-cooling-air-wc" src="__img24" /&#x3E;
+&#x2A;(c)*
 
-*Fig.11. Cooling types.*
+*Fig.12. Cooling types.*
 
 With the efficiency of 98% the 250 kW FC will produce 5 kW of heat. To remove
 the heat from the FC's heatsink a quite powerful ventilation fan should be
@@ -3780,17 +3845,18 @@ described in chapter
 eliminated, since the machine is powered by voltage and current with a shape
 very close to sinusoidal.
 
-<img alt="doc-sin-filter-topology" src="__img24" /&#x3E; &#x2A;(a)*
+<img alt="doc-sin-filter-topology" src="__img25" /&#x3E;
+&#x2A;(a)*
 
-<img alt="doc-sin-filter" src="__img25" /&#x3E; &#x2A;(b)*
+<img alt="doc-sin-filter" src="__img26" /&#x3E; &#x2A;(b)*
 
-*Fig. 12. "Classical" sin-filter topology (a) and product example (b)*.
+*Fig. 13. "Classical" sin-filter topology (a) and product example (b)*.
 
-<img alt="doc-pwm-measured" src="__img26" /&#x3E; &#x2A;(a)*
+<img alt="doc-pwm-measured" src="__img27" /&#x3E; &#x2A;(a)*
 
-<img alt="doc-after-sin" src="__img27" /&#x3E; &#x2A;(b)*
+<img alt="doc-after-sin" src="__img28" /&#x3E; &#x2A;(b)*
 
-*Fig. 13. The voltage waveforms at the input (a) and at the output (b) of the
+*Fig. 14. The voltage waveforms at the input (a) and at the output (b) of the
 sin-filter. Note different time span on the oscillograms*.
 
 Sin-filters have certain drawbacks (largely due to the high inductance value of
@@ -3808,29 +3874,30 @@ cost can be up to 30-40% of the cost of the FC (at low power - up to 50-70%).
 
 ##### du/dt-filter [#dudt-filter]
 
-Structurally, the du/dt filter is a three-phase choke (Fig. 14,a), and from the
+Structurally, the du/dt filter is a three-phase choke (Fig. 15,a), and from the
 point of view of the electric circuit theory it is a concentrated inductive
 resistance. The inclusion of inductance in the equivalent electrical circuit of
 the cable increases the wave resistance of the cable line and brings down the
 reflection coefficient. Thus, the voltage peaks at terminals decreases.
 
-<img alt="doc-dut-filter-topology" src="__img28" /&#x3E; &#x2A;(a)*
+<img alt="doc-dut-filter-topology" src="__img29" /&#x3E;
+&#x2A;(a)*
 
-<img alt="doc-dut-filter" src="__img29" /&#x3E; &#x2A;(b)*
+<img alt="doc-dut-filter" src="__img30" /&#x3E; &#x2A;(b)*
 
-*Fig. 14. "Classical" du/dt-filter topology (a) and product example (b)*.
+*Fig. 15. "Classical" du/dt-filter topology (a) and product example (b)*.
 
 However, the main purpose of du/dt-filters is to eliminate du/dt-effect, i.e.
 decrease in the rise time of the voltage pulse. In addition, due to the inertial
 properties of the inductance, the filter also reduces the voltage surge at the
-leading edge of the pulse (Fig.15). The length of the cable is 30 m. Note
+leading edge of the pulse (Fig.16). The length of the cable is 30 m. Note
 different rise time: dt=220 ns, dt=820 ns.
 
-<img alt="doc-before-dut" src="__img30" /&#x3E; &#x2A;(a)*
+<img alt="doc-before-dut" src="__img31" /&#x3E; &#x2A;(a)*
 
-<img alt="doc-after-dut" src="__img31" /&#x3E; &#x2A;(b)*
+<img alt="doc-after-dut" src="__img32" /&#x3E; &#x2A;(b)*
 
-*Fig. 15. Voltage pulses at the machine terminals without du/dt-filter (a) and
+*Fig. 16. Voltage pulses at the machine terminals without du/dt-filter (a) and
 with a filter (b)*.
 
 ##### Common recommendations on the use of du/dt-filters and other measures [#common-recommendations-on-the-use-of-dudt-filters-and-other-measures]
@@ -3853,50 +3920,51 @@ example is presented in the table:
 ##### Chokes [#chokes]
 
 Influence of presence of the choke and its size on the harmonics injected into
-the grid is presented in Fig.16 and 17. The graphs show current waveform and the
+the grid is presented in Fig.17 and 18. The graphs show current waveform and the
 value of current distortion THD(i) as % of nominal current at full load.
 
-<img alt="doc-6p-no-choke" src="__img32" /&#x3E; &#x2A;(a)*
+<img alt="doc-6p-no-choke" src="__img33" /&#x3E; &#x2A;(a)*
 
-<img alt="doc-thdi80" src="__img33" /&#x3E; &#x2A;(b)*
+<img alt="doc-thdi80" src="__img34" /&#x3E; &#x2A;(b)*
 
-*Fig. 16. 6-pulse rectifier without any choke (a) and current waveform for this
+*Fig. 17. 6-pulse rectifier without any choke (a) and current waveform for this
 topology (b)*.
 
-<img alt="doc-6p-with-choke" src="__img34" /&#x3E; &#x2A;(a)*
+<img alt="doc-6p-with-choke" src="__img35" /&#x3E; &#x2A;(a)*
 
-<img alt="doc-thdi40" src="__img35" /&#x3E; &#x2A;(b)*
+<img alt="doc-thdi40" src="__img36" /&#x3E; &#x2A;(b)*
 
-<img alt="doc-thdi28" src="__img36" /&#x3E; &#x2A;(c)*
+<img alt="doc-thdi28" src="__img37" /&#x3E; &#x2A;(c)*
 
-*Fig. 17. 6-pulse rectifier with a choke (a) and current waveforms for small
+*Fig. 18. 6-pulse rectifier with a choke (a) and current waveforms for small
 choke (b) and big choke (c)*.
 
 ##### LCL filter [#lcl-filter]
 
-FC with LCL filter between FC and the grid is presented in Fig.7,a. Current
-waveform is very close to sinusoidal as can be seen in Fig. 7,b.
+FC with LCL filter between FC and the grid is presented in Fig.8,a. Current
+waveform is very close to sinusoidal as can be seen in Fig. 8,b.
 
-<img alt="doc-fc-with-lcl" src="__img37" /&#x3E; &#x2A;(a)*
+<img alt="doc-fc-with-lcl" src="__img38" /&#x3E; &#x2A;(a)*
 
-<img alt="doc-thdi5" src="__img38" /&#x3E; &#x2A;(b)*
+<img alt="doc-thdi5" src="__img39" /&#x3E; &#x2A;(b)*
 
-*Fig. 18. Topology (a) and current waveform (b)*.
+*Fig. 19. Topology (a) and current waveform (b)*.
 
 ##### EMC filters [#emc-filters]
 
-EMC filters (Fig.19) is destined for emission reduction in MHz range. Example of
-the effect is presented in Fig.20.
+EMC filters (Fig.20) is destined for emission reduction in MHz range. Example of
+the effect is presented in Fig.21.
 
-<img alt="doc-emc-filter-topology" src="__img39" /&#x3E; &#x2A;(a)*
+<img alt="doc-emc-filter-topology" src="__img40" /&#x3E;
+&#x2A;(a)*
 
-<img alt="doc-emc-filter-ac" src="__img40" /&#x3E; &#x2A;(b)*
+<img alt="doc-emc-filter-ac" src="__img41" /&#x3E; &#x2A;(b)*
 
-*Fig. 19. EMC filters: topology (a), AC side filter product example (b)*.
+*Fig. 20. EMC filters: topology (a), AC side filter product example (b)*.
 
-<img alt="doc-emc-with-without-filter" src="__img41" />
+<img alt="doc-emc-with-without-filter" src="__img42" />
 
-*Fig. 20. Effect of use of EMC-filter*.
+*Fig. 21. Effect of use of EMC-filter*.
 
 
 # Gearboxes (/docs/textbook/components/gearboxes)
@@ -3976,8 +4044,8 @@ and 98%. In *DriveConstructor* we assume rated efficiency of 98%. This type of
 gear is cheap to manufacture and has good torque and noise properties, though it
 is generally expensive and requires many gear stages for large reductions.
 
-<img alt="doc-gear-helical-stage3" src="__img1" /> *Fig.2. Helical
-stage*.
+<img alt="doc-gear-helical-stage3" src="__img1" /> *Fig.2.
+Helical stage*.
 
 <img alt="doc-gear-worm3" src="__img2" /> *Fig.3. Worm gear*.
 
@@ -3993,8 +4061,8 @@ typically low efficiency suggests their use for low or middle-to-low power
 demand applications and/or those featuring intermittent duty. They can be ideal
 for applications that need to resist reversing.
 
-<img alt="doc-worm-helical-eff" src="__img3" /> *Fig.4. Efficiency of
-worm gear for different ratios*.
+<img alt="doc-worm-helical-eff" src="__img3" /> *Fig.4.
+Efficiency of worm gear for different ratios*.
 
 ##### Planetary gear [#planetary-gear]
 
@@ -4004,10 +4072,11 @@ from to 4...8. Planetary gears can handle large reductions and give huge torque
 capability. They have high efficiency and are very compact. At the same time
 such gears are expensive to manufacture and can be noisy at high speeds.
 
-<img alt="doc-gear-planetary-stage2" src="__img4" /> *Fig.5.
-Planetary stage*.
+<img alt="doc-gear-planetary-stage2" src="__img4" />
+*Fig.5. Planetary stage*.
 
-<img alt="doc-gear-bevel-stage2" src="__img5" /> *Fig.6. Bevel stage*.
+<img alt="doc-gear-bevel-stage2" src="__img5" /> *Fig.6.
+Bevel stage*.
 
 ##### Bevel gear [#bevel-gear]
 
@@ -4024,8 +4093,8 @@ presented below.
 Gearboxes comprising several helical stages (Fig.7) are used generally in
 heavy-duty applications. They are quite efficient and can have many stages.
 
-<img alt="doc-hel-hel-hel-motor" src="__img6" /> *Fig.7. Gearbox with 3
-helical stages and a motor*.
+<img alt="doc-hel-hel-hel-motor" src="__img6" /> *Fig.7.
+Gearbox with 3 helical stages and a motor*.
 
 In the configuration presented in Fig.8 the input and output shafts are arranged
 at right angles via a gear set with either intersecting (bevel helical) or
@@ -4035,26 +4104,27 @@ reducers in applications involving right angle drives. They are characterized by
 high efficiency and can extend to extremely high reduction ratios (even to
 1700:1).
 
-<img alt="doc-bel-3hel" src="__img7" /> *Fig.8. 1 bevel and 1 helical stage*.
+<img alt="doc-bel-3hel" src="__img7" /> *Fig.8. 1 bevel and 1 helical
+stage*.
 
 Some more examples are presented in Fig. 9-10.
 
-<img alt="doc-worm-hel-conv" src="__img8" /> *Fig.9. Worm gear and helical
-stages for conveyor drive*.
+<img alt="doc-worm-hel-conv" src="__img8" /> *Fig.9. Worm gear
+and helical stages for conveyor drive*.
 
 <img alt="doc-wind-turbine-gear-plan-hel-hel" src="__img9" />
 &#x2A;Fig.10. Gearbox with one planetary and two helical stages for a wind turbine.*.
 
-<img alt="doc-plan-plan-plan-hel" src="__img10" /> *Fig.11. Gearbox with
-three planetary and one helical stage for a wind turbine*.
+<img alt="doc-plan-plan-plan-hel" src="__img10" /> *Fig.11.
+Gearbox with three planetary and one helical stage for a wind turbine*.
 
 Efficiency of any combination is the product of efficiencies of the stages,
 therefore, efficiency of several stages is lower than single-stage solution.
 Fig.12 presents efficiencies of some combinations of stages. Note that lower rpm
 means higher gear ratio.
 
-<img alt="doc-gears-effs" src="__img11" /> *Fig.12. Efficiencies of various
-combinations*.
+<img alt="doc-gears-effs" src="__img11" /> *Fig.12. Efficiencies of
+various combinations*.
 
 ***
 
@@ -4159,10 +4229,11 @@ possible for an improperly protected wet-type transformer to explode. And,
 depending on the application, liquid-filled transformers may require a
 containment trough for protection against possible leaks of the fluid.
 
-<img alt="doc-trafo-dry2" src="__img1" /> &#x2A;Fig.2. Dry transformer (without
-enclosure).*
+<img alt="doc-trafo-dry2" src="__img1" /> &#x2A;Fig.2. Dry transformer
+(without enclosure).*
 
-<img alt="doc-trafo-oil2" src="__img2" /> &#x2A;Fig.3. Oil-filled transformer.*
+<img alt="doc-trafo-oil2" src="__img2" /> &#x2A;Fig.3. Oil-filled
+transformer.*
 
 Arguably, when choosing transformers, the changeover point between dry-types and
 wet-types is between 500 kVA to about 2.5 MVA, with dry-types used for the lower
